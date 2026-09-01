@@ -1,0 +1,9 @@
+{
+  "date": "2026-08-30",
+  "categories": [
+    { "name": "THINGS AT A PARK", "color": "yellow", "words": ["BENCH", "FOUNTAIN", "SWING", "TRAIL"] },
+    { "name": "___ GUARD", "color": "green", "words": ["BODY", "LIFE", "SAFE", "MUD"] },
+    { "name": "___ POOL", "color": "blue", "words": ["CAR", "DEAD", "WHIRL", "GENE"] },
+    { "name": "BLIND ___", "color": "purple", "words": ["SPOT", "FOLD", "SIDE", "DATE"] }
+  ]
+}

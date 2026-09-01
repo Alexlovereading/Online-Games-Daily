@@ -1,0 +1,22 @@
+{
+  "name": "online-games-daily",
+  "compatibility_date": "2026-08-11",
+  "main": "workers/api.ts",
+  "assets": {
+    "directory": "out",
+    "binding": "ASSETS",
+    "not_found_handling": "404-page"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "online-games-daily-leaderboard",
+      "database_id": "0bcf1d34-7ed2-4c76-8269-29a0f1b67ef5"
+    }
+  ],
+  "triggers": {
+    // Hourly sweep of expired submission_log rows — see the scheduled()
+    // handler in workers/api.ts for why this exists.
+    "crons": ["0 * * * *"]
+  }
+}

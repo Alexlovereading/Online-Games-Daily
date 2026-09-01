@@ -1,0 +1,9 @@
+{
+  "date": "2026-08-21",
+  "categories": [
+    { "name": "VEGETABLES", "color": "yellow", "words": ["CARROT", "BROCCOLI", "SPINACH", "CAULIFLOWER"] },
+    { "name": "BOOK ___", "color": "green", "words": ["WORM", "SHELF", "CASE", "MARK"] },
+    { "name": "SPRING ___", "color": "blue", "words": ["BOARD", "ROLL", "CHICKEN", "TIME"] },
+    { "name": "FAMOUS MARKS", "color": "purple", "words": ["TWAIN", "ZUCKERBERG", "WAHLBERG", "ANTONY"] }
+  ]
+}

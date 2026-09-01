@@ -1,0 +1,9 @@
+{
+  "date": "2026-09-02",
+  "categories": [
+    { "name": "THINGS AT A WEDDING", "color": "yellow", "words": ["VEIL", "BOUQUET", "ALTAR", "TUXEDO"] },
+    { "name": "WORDS MEANING 'TIRED'", "color": "green", "words": ["WEARY", "DROWSY", "FATIGUED", "LISTLESS"] },
+    { "name": "___ TOP", "color": "blue", "words": ["LAP", "DESK", "CROP", "SPIN"] },
+    { "name": "DEEP ___", "color": "purple", "words": ["SEA", "BLUE", "FAKE", "FRIED"] }
+  ]
+}

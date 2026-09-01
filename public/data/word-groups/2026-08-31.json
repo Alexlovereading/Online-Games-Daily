@@ -1,0 +1,9 @@
+{
+  "date": "2026-08-31",
+  "categories": [
+    { "name": "OLYMPIC HOST CITIES", "color": "yellow", "words": ["ATHENS", "BEIJING", "SYDNEY", "LONDON"] },
+    { "name": "___ YARD", "color": "green", "words": ["BACK", "COURT", "VINE", "GRAVE"] },
+    { "name": "WORDS MEANING 'FRIEND'", "color": "blue", "words": ["CHUM", "PAL", "BUDDY", "AMIGO"] },
+    { "name": "COLD ___", "color": "purple", "words": ["BLOOD", "SNAP", "TURKEY", "FRONT"] }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "date": "2026-08-22",
+  "categories": [
+    { "name": "WORDS MEANING 'SMALL'", "color": "yellow", "words": ["TINY", "PETITE", "MINUTE", "MINUSCULE"] },
+    { "name": "FAMOUS BILLS", "color": "green", "words": ["GATES", "MURRAY", "NYE", "CLINTON"] },
+    { "name": "___ CAP", "color": "blue", "words": ["ICE", "HUB", "NIGHT", "KNEE"] },
+    { "name": "FLAT ___", "color": "purple", "words": ["IRON", "BED", "MATE", "WARE"] }
+  ]
+}

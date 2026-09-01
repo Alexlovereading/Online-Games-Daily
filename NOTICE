@@ -1,0 +1,269 @@
+Online Games Daily third-party notices
+=======================================
+
+Daily Word Game clue evaluation and React game structures are adapted from:
+
+Project: lynn/hello
+Repository: https://github.com/lynn/hello
+Fixed commit: 835db051e78d0dba4e38bc4b19ae5560b8efbbc3
+Upstream files adapted:
+- https://github.com/lynn/hello/blob/835db051e78d0dba4e38bc4b19ae5560b8efbbc3/src/Game.tsx
+- https://github.com/lynn/hello/blob/835db051e78d0dba4e38bc4b19ae5560b8efbbc3/src/Row.tsx
+- https://github.com/lynn/hello/blob/835db051e78d0dba4e38bc4b19ae5560b8efbbc3/src/Keyboard.tsx
+- https://github.com/lynn/hello/blob/835db051e78d0dba4e38bc4b19ae5560b8efbbc3/src/clue.ts
+
+Source-to-current mapping:
+- src/Game.tsx -> game-engines/word/DailyWordGame.tsx plus state.ts helpers
+  submitCurrentGuess and getGameState
+- GameState -> DailyWordGame.tsx GameState
+- onKey letter/Backspace/Enter branches -> DailyWordGame.tsx onKey
+- guess append and six-attempt win/loss -> state.ts submitCurrentGuess
+- tableRows and RowState selection -> DailyWordGame.tsx tableRows and Row.tsx
+- letterInfo keyboard status aggregation -> DailyWordGame.tsx letterInfo
+- src/Keyboard.tsx three-row flow -> game-engines/word/Keyboard.tsx
+- src/clue.ts exact-first/elusive-letter consumption -> game-engines/word/clue.ts
+
+Modifications:
+- Fixed the game to one five-letter, six-attempt daily mode.
+- Removed random games, challenges, sharing, multiple word lengths, and hard modes.
+- Replaced upstream dictionaries and targets with independently curated project data.
+- Added deterministic UTC daily selection, local progress, shared statistics, analytics hooks,
+  Next.js client integration, responsive styling, and accessibility labels.
+
+Copyright (c) 2022 Lynn
+
+MIT License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+------------------------------------------------------------------------
+
+Daily Sudoku puzzle generation and game logic are adapted from:
+
+Project: eqlis/sudoku
+Repository: https://github.com/eqlis/sudoku
+Fixed commit: 31a6193a871bf82217f83147d5a1851ee007790c
+License: MIT
+Copyright (c) 2026 eqlis
+
+Upstream files adapted:
+- lib/sudoku/types.ts
+- lib/sudoku/constants.ts
+- lib/sudoku/sudoku-state.ts
+- lib/sudoku/solutions-counter.ts
+- lib/sudoku/solver.ts
+- lib/sudoku/generator.ts
+
+Source-to-current mapping:
+- lib/sudoku/*.ts -> game-engines/sudoku/sudoku-core.ts (combined into one module)
+- Puzzle display, input handling, timer -> game-engines/sudoku/DailySudokuGame.tsx (new)
+
+Modifications:
+- Combined multi-file library into a single sudoku-core.ts module.
+- Added seeded-RNG parameter to generateGrid() to support UTC daily deterministic puzzles.
+- Removed Next.js-specific persistence; localStorage handled by project's lib/stats.
+- Built new React component DailySudokuGame.tsx with difficulty selector, timer,
+  accessible grid, numpad, and integration with shared stats/analytics framework.
+
+MIT License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+------------------------------------------------------------------------
+
+Daily 2048 tile movement and merging logic are adapted from:
+
+Project: jinhucheung/2048-react
+Repository: https://github.com/jinhucheung/2048-react
+Fixed commit: 63c77f4bb6b0b902c0277b4fec7aea12b65cdc75
+License: MIT
+Copyright (c) 2018 Jin Hu Cheung
+
+This project is in turn based on:
+Project: gabrielecirulli/2048
+Repository: https://github.com/gabrielecirulli/2048
+License: MIT
+Copyright (c) 2014 Gabriele Cirulli
+
+Upstream files adapted:
+- src/Game.tsx (core game class: move directions, merge, score, tile generation)
+- src/Cell.tsx (tile display approach)
+- src/Cells.tsx (grid layout approach)
+
+Source-to-current mapping:
+- Game class movement methods -> game-engines/game-2048/game-core.ts move() and compress()
+- generateBlock() -> game-engines/game-2048/game-core.ts addTile()
+- Cell/Cells rendering -> game-engines/game-2048/Daily2048Game.tsx board render
+- New component shell -> game-engines/game-2048/Daily2048Game.tsx (new)
+
+Modifications:
+- Converted event-callback class to pure state-transform functions.
+- Added seeded-RNG parameter to initBoard() for UTC daily initial-board generation.
+- Touch-swipe controls added for mobile.
+- Integrated shared UTC dateKey, localStorage progress, stats, and analytics.
+- Adapted to TypeScript strict mode and static-export constraints.
+
+MIT License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+------------------------------------------------------------------------
+
+Daily Word Groups puzzle selection and game-state management logic are adapted from:
+
+Project: uday-nc/connection-clone-nextjs
+Repository: https://github.com/uday-nc/connection-clone-nextjs
+Fixed commit: 90c0ec73c9efb6025cd623d19b547466d96e54ad
+License: MIT
+Copyright (c) 2025 Uday N. Chakraborty
+
+Upstream files adapted:
+- src/hooks/useGame.ts (game state, tile selection, category validation)
+- src/types/game.ts (Category, GameState interfaces)
+- src/components/WordTile.tsx (tile button component)
+- src/components/Modal.tsx (overlay modal)
+- src/components/MessageDisplay.tsx (toast notifications)
+- src/app/page.tsx (grid layout and controls)
+
+Source-to-current mapping:
+- src/hooks/useGame.ts -> game-engines/word-groups/useWordGroups.ts
+- src/types/game.ts -> game-engines/word-groups/types.ts
+- src/app/page.tsx + components -> game-engines/word-groups/WordGroupsGame.tsx
+
+Modifications:
+- Replaced hardcoded puzzle data with fetch-based daily JSON loading from public/data/word-groups/.
+- Replaced random category selection with deterministic UTC dateKey-based puzzle selection.
+- Added localStorage progress persistence (found categories, mistakes, phase).
+- Replaced CDN animate.css link with project-local CSS; removed all debug console.log calls.
+- Removed "Tech Connections" branding and all NYT-derived naming.
+- Integrated project's shared lib/stats and lib/analytics framework.
+- Added accessible ARIA labels throughout; full keyboard navigation.
+
+MIT License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+------------------------------------------------------------------------
+
+Daily Memory Table game state and grid logic are adapted from:
+
+Project: emanuelecaurio/react-card-memory-game
+Repository: https://github.com/emanuelecaurio/react-card-memory-game
+Fixed commit: f08a45a55dd0665639a986d25112f8b57d26e85e
+License: MIT
+Copyright (c) 2022 Emanuele Caurio
+
+Upstream files adapted:
+- src/MemoryGame.tsx (cardStatuses array, click guards, match-checker useEffect,
+  win-detector useEffect, result callback structure)
+- src/consts.tsx (cardStatuses object, symbol pool concept)
+- src/getGeneratedGrid.ts (pool shuffle, pair expansion, grid re-shuffle)
+- src/shuffleArray.ts (Fisher-Yates approach, seeded RNG substituted)
+- src/AllEqual.ts (win-detection one-liner, renamed allEqual.ts)
+
+Source-to-current mapping:
+- src/MemoryGame.tsx -> game-engines/memory/MemoryGame.tsx
+- src/consts.tsx -> game-engines/memory/consts.ts
+- src/getGeneratedGrid.ts -> game-engines/memory/getGeneratedGrid.ts
+- src/shuffleArray.ts -> game-engines/memory/shuffleArray.ts
+- src/AllEqual.ts -> game-engines/memory/allEqual.ts
+
+New files (not in upstream):
+- game-engines/memory/Card.tsx (CSS 3D flip card replacing reactjs-flip-card)
+- game-engines/memory/useTimer.ts (setInterval elapsed timer)
+
+Modifications:
+- Removed reactjs-flip-card dependency; replaced with local Card.tsx using
+  CSS transform: rotateY(180deg) + transform-style: preserve-3d.
+- Substituted Math.random() with makeSeededRng(getDailySeed(dateKey, slug))
+  for UTC daily deterministic grid generation.
+- Added stale-closure guards (statusesRef, firstClickedRef) for timeout callbacks.
+- Added moves counter and useTimer hook for elapsed tracking.
+- Added localStorage progress save/restore (completed, moves, elapsed).
+- Integrated project's shared completeGame, trackEvent, createGameCompleteEvent.
+- Replaced upstream emoji pool with a 20-symbol pool; 8 symbols selected daily by seed.
+- Adapted to TypeScript strict mode and static-export constraints.
+
+MIT License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

@@ -1,0 +1,9 @@
+{
+  "date": "2026-08-08",
+  "categories": [
+    { "name": "TYPES OF CHEESE", "color": "yellow", "words": ["BRIE", "GOUDA", "CHEDDAR", "FETA"] },
+    { "name": "OLYMPIC SPORTS", "color": "green", "words": ["FENCING", "ARCHERY", "ROWING", "JUDO"] },
+    { "name": "FAMOUS JOHNS", "color": "blue", "words": ["LENNON", "WICK", "WAYNE", "ADAMS"] },
+    { "name": "THINGS THAT CAN BE 'GRAND'", "color": "purple", "words": ["PIANO", "JURY", "SLAM", "CANYON"] }
+  ]
+}

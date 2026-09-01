@@ -1,0 +1,9 @@
+{
+  "date": "2026-08-18",
+  "categories": [
+    { "name": "TYPES OF DANCES", "color": "yellow", "words": ["WALTZ", "TANGO", "SALSA", "FOXTROT"] },
+    { "name": "THINGS IN A FIRST AID KIT", "color": "green", "words": ["BANDAGE", "GAUZE", "TWEEZERS", "ANTISEPTIC"] },
+    { "name": "___ ROLL", "color": "blue", "words": ["DRUM", "SPRING", "BARREL", "ROCK"] },
+    { "name": "___ BERRY", "color": "purple", "words": ["STRAW", "BLUE", "GOOSE", "HALLE"] }
+  ]
+}

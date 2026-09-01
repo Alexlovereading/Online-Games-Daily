@@ -1,0 +1,9 @@
+{
+  "date": "2026-08-25",
+  "categories": [
+    { "name": "TYPES OF COOKIES", "color": "yellow", "words": ["SNICKERDOODLE", "MACARON", "SHORTBREAD", "BISCOTTI"] },
+    { "name": "___ BIRD", "color": "green", "words": ["BLACK", "THUNDER", "MOCK", "FIRE"] },
+    { "name": "FAMOUS KATES", "color": "blue", "words": ["WINSLET", "HUDSON", "MIDDLETON", "BUSH"] },
+    { "name": "WORDS BEFORE 'LINE'", "color": "purple", "words": ["GUIDE", "DEAD", "HEAD", "BASE"] }
+  ]
+}

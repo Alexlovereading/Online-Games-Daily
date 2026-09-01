@@ -1,0 +1,9 @@
+{
+  "date": "2026-08-23",
+  "categories": [
+    { "name": "TYPES OF BREAD", "color": "yellow", "words": ["SOURDOUGH", "RAISIN", "PUMPERNICKEL", "BRIOCHE"] },
+    { "name": "___ WALK", "color": "green", "words": ["BOARD", "CAKE", "MOON", "CROSS"] },
+    { "name": "THINGS IN A BATHROOM", "color": "blue", "words": ["MIRROR", "FAUCET", "TOWEL", "LOOFAH"] },
+    { "name": "WORDS BEFORE 'OUT'", "color": "purple", "words": ["BLACK", "FADE", "BURN", "FALL"] }
+  ]
+}

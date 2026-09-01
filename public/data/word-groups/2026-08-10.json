@@ -1,0 +1,9 @@
+{
+  "date": "2026-08-10",
+  "categories": [
+    { "name": "BREAKFAST FOODS", "color": "yellow", "words": ["WAFFLE", "BAGEL", "OMELET", "CREPE"] },
+    { "name": "COFFEE DRINKS", "color": "green", "words": ["LATTE", "ESPRESSO", "MOCHA", "MACCHIATO"] },
+    { "name": "WORDS BEFORE 'SIDE'", "color": "blue", "words": ["OUT", "UP", "IN", "BLIND"] },
+    { "name": "FAMOUS MICHAELS", "color": "purple", "words": ["JORDAN", "JACKSON", "MYERS", "SCOTT"] }
+  ]
+}

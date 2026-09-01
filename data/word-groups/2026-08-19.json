@@ -1,0 +1,9 @@
+{
+  "date": "2026-08-19",
+  "categories": [
+    { "name": "KITCHEN UTENSILS", "color": "yellow", "words": ["SPATULA", "COLANDER", "WHISK", "LADLE"] },
+    { "name": "___ PRINT", "color": "green", "words": ["BLUE", "FOOT", "THUMB", "FINE"] },
+    { "name": "FAMOUS VINCENTS", "color": "blue", "words": ["GOGH", "PRICE", "LOMBARDI", "VAUGHN"] },
+    { "name": "WORDS MEANING 'LOOK'", "color": "purple", "words": ["GAZE", "PEER", "GLANCE", "STARE"] }
+  ]
+}

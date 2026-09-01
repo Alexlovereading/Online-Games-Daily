@@ -1,0 +1,9 @@
+{
+  "date": "2026-08-26",
+  "categories": [
+    { "name": "COCKTAILS", "color": "yellow", "words": ["MOJITO", "MARGARITA", "COSMOPOLITAN", "DAIQUIRI"] },
+    { "name": "___ BOX", "color": "green", "words": ["SAND", "MAIL", "TOOL", "JUKE"] },
+    { "name": "WORDS MEANING 'WALK SLOWLY'", "color": "blue", "words": ["STROLL", "SAUNTER", "TRUDGE", "AMBLE"] },
+    { "name": "HOT ___", "color": "purple", "words": ["DOG", "SHOT", "BED", "POT"] }
+  ]
+}

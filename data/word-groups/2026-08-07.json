@@ -1,0 +1,9 @@
+{
+  "date": "2026-08-07",
+  "categories": [
+    { "name": "DOG BREEDS", "color": "yellow", "words": ["POODLE", "BEAGLE", "BOXER", "HUSKY"] },
+    { "name": "CIRCUS PERFORMERS", "color": "green", "words": ["CLOWN", "TRAPEZE", "RINGMASTER", "ACROBAT"] },
+    { "name": "___ WORK", "color": "blue", "words": ["NET", "FRAME", "HAND", "TEAM"] },
+    { "name": "WORDS AFTER 'OVER'", "color": "purple", "words": ["COAT", "LOAD", "HAUL", "BOARD"] }
+  ]
+}

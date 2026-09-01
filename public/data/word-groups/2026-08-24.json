@@ -1,0 +1,9 @@
+{
+  "date": "2026-08-24",
+  "categories": [
+    { "name": "THINGS IN SPACE", "color": "yellow", "words": ["COMET", "ASTEROID", "NEBULA", "PULSAR"] },
+    { "name": "WORDS MEANING 'HAPPY'", "color": "green", "words": ["ELATED", "JOVIAL", "GLEEFUL", "BLISSFUL"] },
+    { "name": "___ JACK", "color": "blue", "words": ["BLACK", "FLAP", "CRACKER", "LUMBER"] },
+    { "name": "THINGS AFTER 'SAND'", "color": "purple", "words": ["STONE", "PAPER", "BAG", "CASTLE"] }
+  ]
+}

@@ -1,0 +1,1261 @@
+[
+  {
+    "slug": "cupcake-2048",
+    "title": "Cupcake 2048",
+    "description": "The sweetest spin on 2048 — slide matching cupcakes together and bake your way up to the grand 2048 cake.",
+    "icon": "🧁",
+    "color": "#f5a3c7",
+    "path": "/cupcake-2048",
+    "engine": "cupcake-2048",
+    "category": "number",
+    "daily": true,
+    "priority": 1,
+    "status": "live",
+    "keywords": [
+      "cupcake 2048",
+      "2048 cupcakes",
+      "cupcakes 2048",
+      "2048 cupcake game",
+      "2048 cupcakes unblocked",
+      "daily cupcake 2048 challenge"
+    ],
+    "related": [
+      "2048",
+      "daily-sudoku"
+    ],
+    "faq": [
+      {
+        "q": "How is Cupcake 2048 different from regular 2048?",
+        "a": "I kept the board math exactly the same as classic 2048 — the same 4x4 grid and the same slide-and-merge algorithm — and only changed the presentation. Tile values still climb 2, 4, 8...2048, but I mapped them onto six sprite stages instead of plain numbers: 2/4/8 are cupcakes, 16/32 are donuts, 64 is candy, 128 is a lollipop, 256/512 are cake slices, and 1024/2048 are the full birthday cake."
+      },
+      {
+        "q": "How do cupcakes combine?",
+        "a": "Slide the board with the arrow keys or a swipe. When two cupcake tiles with the same value touch, they merge into the next tile up — for example, two value-4 cupcakes become one value-8 cupcake."
+      },
+      {
+        "q": "What is the goal of the game?",
+        "a": "Keep merging matching cupcakes until you bake a tile worth 2048. Once you reach it you can keep going to push for 4096 and beyond."
+      },
+      {
+        "q": "Does the board reset every day?",
+        "a": "A fresh daily batch starts at midnight UTC, seeded the same way for every player, so today's board is unique to today. Your best score doesn't reset with it, though — that's a running high saved locally in your browser across every batch you've ever played, not just today's."
+      },
+      {
+        "q": "Is today's board exactly the same for every player, start to finish?",
+        "a": "Only the opening two tiles — the daily seed fixes those, so everyone starts from an identical board. Every tile that spawns after your first move is drawn independently for each player, so two people's boards diverge the moment they start sliding. \"Daily\" here means a shared starting position, not a shared run."
+      },
+      {
+        "q": "What does the New Batch button actually restart?",
+        "a": "It rebuilds today's board from the same daily seed, so you get the exact same two starting tiles again — it's a clean re-attempt at today's opening, not a random new board and not a peek at tomorrow's puzzle."
+      },
+      {
+        "q": "What happens when the board fills up?",
+        "a": "The batch ends when every cell holds a cupcake and no two adjacent tiles can merge, leaving no legal moves left."
+      },
+      {
+        "q": "Can I play Cupcake 2048 unblocked at school or work?",
+        "a": "It's a static page with no login and no server calls — everything runs client-side and saves to your browser's local storage. So if your network lets this page load at all, it plays exactly the same as it does anywhere else."
+      },
+      {
+        "q": "How is my score actually calculated?",
+        "a": "Score isn't one point per merge — it's the value of the tile you just created. Merging two value-4 cupcakes into a value-8 cupcake adds 8 points, not 2. Later merges are worth far more than early ones: a single 256+256→512 merge adds as many points as 128 separate cupcake-to-cupcake merges early on."
+      },
+      {
+        "q": "Once I bake the 2048 cake, does the board reset if I don't click anything?",
+        "a": "No — reaching 2048 freezes the board. Arrow keys and swipes stop responding the instant you win, and stay frozen until you pick \"Keep baking\" (which unfreezes the same board so you can push toward 4096) or \"New batch\" (which rebuilds from today's seed). There's no way to keep sliding tiles while that win overlay is up."
+      },
+      {
+        "q": "Why didn't my swipe move any tiles?",
+        "a": "A swipe only registers if it travels at least 30 pixels in one direction; anything shorter is treated as a stray tap and ignored rather than read as a direction. If tiles aren't responding on mobile, try a longer, more deliberate flick rather than a short nudge."
+      }
+    ],
+    "tips": [
+      "The board math is identical to classic 2048, but the six sprite stages aren't evenly spaced — you'll spend most of a game cycling through cupcakes and donuts (values 2 through 32) before a single candy or lollipop tile shows up, so treat hitting 64 as the real turning point, not the halfway mark it looks like.",
+      "Only your first two tiles are fixed by the daily seed — everything that spawns after your first move is drawn independently for each player, so two people can start on an identical board and have completely different boards a few moves later.",
+      "The New Batch button doesn't hand you a random board — it replays the same two seeded starting tiles every time, so use it to practice openings against today's specific seed rather than expecting a fresh layout.",
+      "Same spawn odds as classic 2048: about 9 in 10 new tiles land as the smallest cupcake, not the next size up, so don't hold a move waiting for a lucky big spawn — plan around small, frequent merges instead.",
+      "Corner-anchor your best tile like any 2048 variant, but watch for the donut-to-candy jump at 64 as your cue that the tile is now worth protecting — losing an anchor after that point costs far more rebuilding time than losing an early cupcake tile.",
+      "Because score comes from the merged tile's value rather than a flat point per merge, chasing big late-game merges matters far more than racking up small early ones — two mid-size merges can easily outscore a dozen small cupcake-to-cupcake ones, so don't feel behind if your score looks low while you're still building up big tiles."
+    ],
+    "howToPlay": [
+      "Slide every cupcake tile in one direction.",
+      "Match frosting and values to merge tiles, working up toward the 2048 cake."
+    ],
+    "featured": true
+  },
+  {
+    "slug": "daily-sudoku",
+    "title": "Daily Sudoku",
+    "description": "A quiet, free daily 9x9 sudoku puzzle with a choice of difficulty (Easy, Medium, Hard) and no distractions.",
+    "icon": "🔢",
+    "color": "#5891d4",
+    "path": "/daily-sudoku",
+    "engine": "sudoku",
+    "category": "number",
+    "daily": true,
+    "priority": 2,
+    "status": "live",
+    "keywords": [
+      "daily sudoku",
+      "daily sudoku challenge",
+      "sudoku online",
+      "free sudoku puzzle",
+      "hard sudoku puzzle",
+      "sudoku for kids",
+      "x wing sudoku",
+      "color sudoku",
+      "sudoku solving techniques"
+    ],
+    "related": [
+      "daily-word-game",
+      "2048"
+    ],
+    "faq": [
+      {
+        "q": "Is each puzzle unique to the day?",
+        "a": "Yes. The daily board is selected using the shared UTC date, so every player works on the same puzzle on the same day."
+      },
+      {
+        "q": "Are there different difficulty levels?",
+        "a": "Yes — Easy, Medium, and Hard. Same generator, different clue count: Easy starts with 36 filled cells, Medium with 30, Hard with just 24, so the jump between them is a real difference in how much you have to work out, not just a label."
+      },
+      {
+        "q": "Is this a good sudoku for kids or beginners?",
+        "a": "There's no separate kids mode, but Easy is generated with 36 starting numbers — 12 more than Medium — so more than half the board is already filled in. That's the difficulty I'd point a kid or a first-timer to."
+      },
+      {
+        "q": "Does my progress save if I navigate away?",
+        "a": "Your progress is saved automatically in your browser as you play, so you can close the tab and return later to continue exactly where you left off."
+      },
+      {
+        "q": "Is there a timer?",
+        "a": "A timer tracks how long you have been playing, but there is no time limit — you are free to solve at whatever pace suits you."
+      },
+      {
+        "q": "Can I use pencil marks or candidate notes?",
+        "a": "No, not yet — there's no dedicated pencil-mark mode for candidate numbers. The board's highlighting (see the color question below) covers some of that gap, but on Hard puzzles you'll probably still want scratch paper on the side."
+      },
+      {
+        "q": "What happens if I place a wrong number?",
+        "a": "The board doesn't auto-correct you, but a conflicting entry is flagged the moment you place it. Hit the eraser (or Backspace/Delete) to clear the selected cell and try again — there's no multi-step undo, just that one cell."
+      },
+      {
+        "q": "Can I print today's sudoku puzzle?",
+        "a": "There's no dedicated print or PDF button. It's a normal webpage, so your browser's print function (Ctrl/Cmd+P) turns today's grid into a printable sudoku puzzle — the layout isn't tuned for paper, but it works. A screenshot does the job too if you'd rather solve offline; Easy difficulty is the one I'd print for a beginner."
+      },
+      {
+        "q": "Do you have a 'sudoku evil' or expert difficulty level?",
+        "a": "Not under that name — Hard is as far as the built-in levels go, and it's generated with just 24 starting numbers, which is genuinely tough. One honest caveat: on the rare board where a unique-solution Hard grid takes too long to generate, it quietly falls back to a Medium-difficulty puzzle instead of freezing your browser — you'd only notice if a 'Hard' day feels a little easier than usual."
+      },
+      {
+        "q": "Can I use techniques like X-Wing on these puzzles?",
+        "a": "Yes — every puzzle is a standard 9x9 grid, so every classic technique applies. On Hard's 24-clue boards, basic scanning often isn't enough; that's exactly where X-Wing, Swordfish, and similar candidate-elimination strategies earn their keep."
+      },
+      {
+        "q": "Do you offer 'color sudoku', where colors replace or highlight numbers?",
+        "a": "Not as a dedicated variant — the grid always shows plain numbers. But color is already doing real work: select a cell and every matching number, plus its row, column, and box, gets shaded, and any conflicting entry is flagged in a different color the instant you place it."
+      },
+      {
+        "q": "Are Easy, Medium, and Hard the same grid with fewer clues, or genuinely different puzzles?",
+        "a": "Genuinely different. Each difficulty is generated from its own independent daily seed rather than being one shared grid with more or fewer numbers pre-filled, so Easy, Medium, and Hard are three unrelated boards on any given day. Each also keeps its own separate saved progress and timer, so switching from Hard to Easy and back doesn't touch or overwrite what you'd already filled in on Hard."
+      },
+      {
+        "q": "Can I overwrite one of the starting pre-filled numbers?",
+        "a": "No — cells that came filled in from the puzzle are locked. Both number entry and the eraser check whether a cell started empty before doing anything, so a given number can't be typed over or cleared; you can only fill in and erase the cells that started blank."
+      },
+      {
+        "q": "Can I play this entirely from the keyboard, without a mouse?",
+        "a": "Almost — one initial click or tap is required to select a starting cell, since nothing is selected when the page loads and the arrow keys only move an existing selection rather than creating one. Once a cell is selected, though, it's fully keyboard-driven: number keys 1-9 place that value, Backspace/Delete/0 clears the cell, and the four arrow keys move the selection around the grid — they stop at row and column 0-8, so you can't arrow off the edge of the board. Ctrl, Cmd, and Alt combinations are ignored so normal browser shortcuts still work."
+      }
+    ],
+    "tips": [
+      "Before placing any numbers, scan each row, column, and 3×3 box to see which digits are already present — this immediately eliminates options for every empty cell in that unit.",
+      "Start with the boxes, rows, or columns that already have the most numbers filled in, since they have the fewest possible placements remaining and are easiest to complete.",
+      "There's no pencil-mark mode built in, so if a puzzle has you stuck, jot candidates in the margin of actual paper next to your screen, grouped by row. Trying to hold more than two or three candidates per cell in your head is where most mistakes creep in.",
+      "Hunt for 'naked singles' — cells where only one candidate digit is possible — as your first placement move each time. These free placements often cascade and unlock more of the grid.",
+      "On Hard puzzles, look for X-Wing patterns once scanning stops finding placements: when a candidate number is confined to the same two columns across two different rows, you can eliminate it from every other cell in those columns.",
+      "Since each difficulty keeps its own separate saved puzzle and timer, you can start the day on Hard, switch to Easy or Medium whenever you want a break or a warm-up, and come back to Hard exactly where you left off — nothing about your other difficulty's progress resets or gets overwritten in the meantime."
+    ],
+    "howToPlay": [
+      "Fill each empty cell with a number from 1 to 9.",
+      "Do not repeat a number in any row, column, or box."
+    ]
+  },
+  {
+    "slug": "reaction-test",
+    "title": "Daily Reaction Test",
+    "description": "Take a fast, free reaction time test — wait for the signal, then click as fast as you can across five rounds.",
+    "icon": "⚡",
+    "color": "#e8484f",
+    "path": "/reaction-test",
+    "engine": "reaction-test",
+    "category": "memory",
+    "daily": true,
+    "priority": 3,
+    "status": "live",
+    "keywords": [
+      "reaction time test",
+      "reflex test online",
+      "daily reaction test",
+      "reaction test daily challenge",
+      "reaction test",
+      "reaction speed test",
+      "speed reaction test",
+      "f1 reaction test",
+      "human benchmark reaction time test",
+      "ruler drop test for reaction time"
+    ],
+    "related": [
+      "memory-game",
+      "capital-quiz"
+    ],
+    "faq": [
+      {
+        "q": "How many rounds are there?",
+        "a": "Five rounds each day. Your average reaction time across all five determines your result."
+      },
+      {
+        "q": "What happens if I click too early?",
+        "a": "Clicking before the box turns green records a false start for that round — it shows as \"—\" instead of a time. False starts are actually dropped from your average rather than counted against it: only if you false-start all five rounds does your average fall back to a flat 999ms, well past the 400ms line for a win. So one early click costs you a round, not your whole day."
+      },
+      {
+        "q": "Is the test the same for everyone?",
+        "a": "Yes — each round's wait before the signal is randomized between 1 and 4 seconds using a daily seed, so everyone faces the same sequence of delays that day, but you still can't predict the exact moment it turns green."
+      },
+      {
+        "q": "What is a good reaction time?",
+        "a": "Average human reaction time is around 250-300ms. Scoring under 400ms average is considered a strong result."
+      },
+      {
+        "q": "Does my result save?",
+        "a": "Yes, your completed result is saved locally in your browser for the day."
+      },
+      {
+        "q": "Can I retry if I miss a round?",
+        "a": "No — each day is one attempt across five rounds, just like the other daily games on this site."
+      },
+      {
+        "q": "How is this different from Human Benchmark's reaction time test?",
+        "a": "The core mechanic is similar — both measure how fast you can click after a visual signal. The difference is format: Human Benchmark gives you unlimited retries to chase a personal best, while this is a daily challenge — everyone gets the same five-round sequence once per day, so your score is directly comparable to other players that day rather than to your own best-of-many attempts."
+      },
+      {
+        "q": "What does reaction time have to do with F1 race starts?",
+        "a": "F1 drivers launch off a light sequence — five red lights illuminate, then go out together, and the race starts the instant they do. Reacting before the lights go out is a jump-start penalty, so drivers train specifically to react in the 200-300ms window right after the lights extinguish. That's the same skill this test measures, just without a car attached."
+      },
+      {
+        "q": "What is the ruler drop test, and how does it compare to this?",
+        "a": "The ruler drop test is a low-tech way to estimate reaction time: a partner drops a ruler and you catch it, then you estimate your reaction time from how far it fell before your fingers closed. This test measures the same underlying skill but electronically and in milliseconds — no ruler or partner required, and it's precise enough to track small improvements over time."
+      },
+      {
+        "q": "Can you actually get faster at a reaction speed test with practice?",
+        "a": "Somewhat. Reaction time is mostly determined by nervous system wiring and doesn't change dramatically, but staying alert, minimizing distractions, and resting your hand near the click area can shave real milliseconds off your average. Playing daily is a good way to track your trend rather than chase a single lucky round."
+      },
+      {
+        "q": "How precise is the millisecond timing — is it just reading the system clock?",
+        "a": "No — each round's time is measured with performance.now(), a monotonic high-resolution timer built for exactly this, not Date.now() or the wall clock, so it can't be thrown off by a system clock adjustment mid-round the way a wall-clock reading could. That said, it's still measuring real elapsed time from signal to click: if you switch away from the tab right after the box turns green, the time spent away counts against you just like it would with a stopwatch, so a huge outlier round is usually a backgrounded tab, not a timing bug."
+      },
+      {
+        "q": "If I reload the page mid-round, do I lose my whole run?",
+        "a": "Just that one round. Progress saves to your browser after each completed round, not while one is in flight — so reloading while the box is red (\"waiting\") or green (\"click now\") discards only that in-progress round; every round you'd already finished before the reload comes back exactly as recorded."
+      },
+      {
+        "q": "Can clicking right as the box changes color throw off the result?",
+        "a": "No — every round is tagged internally with a counter that only advances when a new round actually starts. A click or a leftover timer from a moment ago only counts if its counter still matches the round currently on screen, so a stray timer firing late from a previous click can never overwrite the round you're actually on."
+      }
+    ],
+    "tips": [
+      "Keep your eyes fixed on the box rather than glancing away — anticipating the color change without moving your gaze shaves valuable milliseconds.",
+      "Rest your finger lightly on the click area instead of hovering far away, so the physical travel time doesn't add to your reaction time.",
+      "Stay relaxed. Tensing up in anticipation causes false starts, which burn a round without banking a time — rack up five in a day and you're locked into the worst-case 999ms average, well past the 400ms win line.",
+      "Reaction time naturally varies round to round — don't overreact to one slow round, focus on a consistent average.",
+      "Your time is measured with a monotonic high-resolution clock rather than the system date, so an odd clock adjustment mid-round can't quietly skew a single round's number — but it's still real elapsed time, so keep the tab focused after the box turns green, or a moment spent elsewhere will count against your reaction time."
+    ],
+    "howToPlay": [
+      "Wait for the box to turn green.",
+      "Click as fast as you can once it does."
+    ]
+  },
+  {
+    "slug": "spelling-bee",
+    "title": "Daily Spelling Bee",
+    "description": "Spell as many words as you can from seven letters in this free daily Spelling Bee puzzle — every word needs the center letter, and finding the pangram earns a bonus.",
+    "icon": "🐝",
+    "color": "#f2b705",
+    "path": "/spelling-bee",
+    "engine": "spelling-bee",
+    "category": "word",
+    "daily": true,
+    "priority": 4,
+    "status": "live",
+    "keywords": [
+      "spelling bee game",
+      "daily spelling bee",
+      "spelling bee daily challenge",
+      "word puzzle pangram",
+      "blossom game",
+      "spelling bee words",
+      "spelling bee word list",
+      "spelling bee ranks",
+      "difficult words to spell for spelling bee",
+      "hardest spell bee words"
+    ],
+    "related": [
+      "daily-word-game",
+      "daily-word-groups"
+    ],
+    "faq": [
+      {
+        "q": "What is a pangram?",
+        "a": "A word that uses all seven letters at least once. Pangrams earn a big bonus on top of their normal score."
+      },
+      {
+        "q": "Does every word need the center letter?",
+        "a": "Yes. The center letter is required in every valid word, but you can reuse any letter — including the center — more than once."
+      },
+      {
+        "q": "How is scoring calculated?",
+        "a": "Four-letter words are worth 1 point. Longer words are worth one point per letter. Finding a pangram adds a 7-point bonus."
+      },
+      {
+        "q": "Do I have to find every word to win?",
+        "a": "No. Reaching about 40% of the puzzle's maximum possible score counts as a win for the day — you can stop anytime after that."
+      },
+      {
+        "q": "Is today's puzzle the same for everyone?",
+        "a": "Yes, a daily seed picks the same seven-letter puzzle for every player, refreshed at midnight UTC."
+      },
+      {
+        "q": "Does my progress save if I close the browser?",
+        "a": "Yes, your found words and score are saved locally in your browser, so you can pick up where you left off."
+      },
+      {
+        "q": "Is this the same as the Blossom word game?",
+        "a": "It uses the same core mechanic as games like Blossom: a set of letters arranged around one required center letter, and every valid word must use that center letter at least once."
+      },
+      {
+        "q": "What are the spelling bee ranks or scoring tiers?",
+        "a": "This game doesn't use NYT-style rank tiers (Beginner, Good, Great, Amazing, Genius). Scoring is simpler: four-letter words are worth 1 point, longer words earn one point per letter, and finding the pangram adds a 7-point bonus. Reaching about 40% of the day's maximum possible score marks the puzzle as won."
+      },
+      {
+        "q": "Can I see yesterday's spelling bee answers?",
+        "a": "Not yet — the game only shows today's puzzle, refreshed at midnight UTC, and there's currently no archive or history view for previous days' word lists."
+      },
+      {
+        "q": "Are there hints if I get stuck?",
+        "a": "There's no built-in hint button right now. If you're stuck, try combining the center letter with each of the other letters in turn, and remember that letters can repeat within a word — many valid answers use one letter twice or more."
+      },
+      {
+        "q": "Is there an unlimited mode, and is this the same as the NYT Spelling Bee?",
+        "a": "There's one fresh puzzle per player per day rather than an unlimited or practice mode, resetting at midnight UTC. It's an independent game inspired by pangram-style word games like the NYT Spelling Bee — using its own seven-letter combination and word list — and isn't affiliated with or synced to the New York Times puzzle."
+      },
+      {
+        "q": "What are the hardest words to spell in this game?",
+        "a": "Across the 30 puzzles in the current word pool, the longest valid words run eight letters — ATTAINED, MECHANIC, CLIMATIC, and NOBILITY are a few that show up. Each day's word list holds anywhere from 16 to 28 valid words (about 20 on average), and it's usually those longer entries, plus the day's pangram, that take the longest to spot."
+      },
+      {
+        "q": "Does Spelling Bee work with a real keyboard, not just tapping the hive?",
+        "a": "Yes — type any letter that's actually in today's hive and it gets added to the word in progress (a key for a letter that isn't in the hive is silently ignored), Enter submits, and Backspace deletes the last letter. The hex grid is there for touch, but the whole game is fully playable hands-on-keyboard."
+      },
+      {
+        "q": "What does Play Again actually do in Spelling Bee?",
+        "a": "It swaps in a different puzzle from the same 30-puzzle pool, picked with a fresh non-daily seed, held only in memory — your real saved score and streak for today are never touched by it, so replaying is just extra practice, not a redo of the actual daily hive."
+      },
+      {
+        "q": "Do I have to guess how close I am to winning?",
+        "a": "No — the exact point target for today's puzzle (max possible score times 40%, rounded up) is shown live right next to your running score the whole time you're playing, not just revealed at the end, so you always know precisely how many more points you need."
+      }
+    ],
+    "tips": [
+      "Start with short, common words using the center letter to warm up before hunting for longer ones.",
+      "Once you spot a solid four- or five-letter word, try adding common prefixes or suffixes to find longer variations that reuse the same letters.",
+      "Actively hunt for the pangram — since it must use all seven letters, try mentally arranging them into different orders rather than waiting to stumble on it.",
+      "Don't ignore letter repetition — many valid words reuse a letter twice or more, which is easy to overlook if you're only trying each letter once.",
+      "The success/error message after each word only stays on screen for 1.8 seconds and doesn't block input — don't pause and wait for it to clear before typing your next word, the hive stays fully live the entire time."
+    ],
+    "howToPlay": [
+      "Spell words using the seven letters shown.",
+      "Every word must include the center letter and be at least four letters long."
+    ]
+  },
+  {
+    "slug": "word-search",
+    "title": "Daily Word Search",
+    "description": "Find eight hidden words in a themed letter grid — a free daily word search puzzle with a new category (animals, space, weather, and more) every day.",
+    "icon": "🔍",
+    "color": "#2f9e8f",
+    "path": "/word-search",
+    "engine": "word-search",
+    "category": "word",
+    "daily": true,
+    "priority": 5,
+    "status": "live",
+    "keywords": [
+      "word search puzzle",
+      "daily word search",
+      "word search daily challenge",
+      "find the words game",
+      "difficult word search puzzles",
+      "hard word search puzzles"
+    ],
+    "related": [
+      "daily-word-game",
+      "waffle"
+    ],
+    "faq": [
+      {
+        "q": "How many words do I need to find?",
+        "a": "Eight words, all connected to a single daily theme shown at the top of the puzzle."
+      },
+      {
+        "q": "Is the puzzle the same for everyone?",
+        "a": "Yes. A daily seed picks the theme, the words, and their placement in the grid, refreshed at midnight UTC."
+      },
+      {
+        "q": "Which directions can words run?",
+        "a": "Words can run left-to-right, top-to-bottom, or diagonally in either downward direction — never backwards or upward, so scanning is predictable."
+      },
+      {
+        "q": "How do I select a word?",
+        "a": "Tap the first letter, then tap the last letter of the word. If the letters between them spell a hidden word in either direction, it's marked as found."
+      },
+      {
+        "q": "Does my progress save if I close the browser?",
+        "a": "Yes, the words you've already found are saved locally in your browser for the day."
+      },
+      {
+        "q": "Is there a time limit?",
+        "a": "No. Take as long as you need — there's no clock counting down."
+      },
+      {
+        "q": "Is there a large print version for easier reading?",
+        "a": "There's no dedicated large-print mode, but there's nothing to buy or download either — the grid is a normal webpage, so your browser's zoom (Ctrl/Cmd and +) or pinch-to-zoom on mobile enlarges the same bold monospace letters to whatever size is comfortable."
+      },
+      {
+        "q": "Are these hard word search puzzles, or good for beginners?",
+        "a": "There's no selectable difficulty level — everyone solves the same eight-word puzzle each day. What makes it feel hard or easy is the math, not a toggle: the grid is 12x12 (144 cells) holding just eight words, so most of what you see is random filler letters, and every word is placed reading only right, down, or diagonally-down — never backward or upward — so you can't rely on scanning in one easy direction. That's what makes for a genuinely difficult word search without needing a difficulty setting."
+      },
+      {
+        "q": "Can I get a free printable word search puzzle?",
+        "a": "Every puzzle here is free to play, and there's no dedicated print or PDF button, but it's a normal webpage — your browser's print function (Ctrl/Cmd+P) turns today's letter grid and word list into a printable word search. It isn't laid out specifically for paper, but it prints clearly since it's already a simple monospace layout."
+      },
+      {
+        "q": "What themes does the daily word search puzzle use?",
+        "a": "Each day's theme is picked at random (seeded by the date, so it's the same for everyone) from a rotating pool of nine: Animals, Ocean Life, Space, Kitchen, Weather, Sports, Music, Travel, and Garden. You can't pick a theme yourself — you get whichever one comes up for today, with eight words drawn from that theme's list."
+      },
+      {
+        "q": "What order do the eight words get placed on the grid?",
+        "a": "Longest words first. I sort the day's word list by length before placing anything, since longer words are the hardest to fit into the 12x12 grid without hitting a letter conflict — placing them while the grid is still mostly empty leaves the shorter words an easier time finding a legal home afterward."
+      },
+      {
+        "q": "What happens if a word genuinely can't fit on the grid?",
+        "a": "Each word gets up to 100 randomized placement attempts (random direction, random starting cell) before I give up on it. In practice that's never actually failed with an empty 12x12 grid and only eight words, but the generator is built to just skip a word that truly can't fit rather than loop forever — so what loads is always a complete, playable grid either way."
+      },
+      {
+        "q": "If I select the wrong cells, does anything happen besides nothing?",
+        "a": "The cells you selected flash red for 400 milliseconds, then clear back to normal — a quick visual \"no\" so you know the selection didn't register as a word. There's no penalty and no counter against you; you can try again immediately."
+      }
+    ],
+    "tips": [
+      "Scan for uncommon letters first, like Q, X, Z, or J — they narrow down a word's location fast since they appear far less often as filler.",
+      "Read the word list before scanning the grid so your eyes know exactly what letter patterns to look for.",
+      "From any letter that matches a word's start, check right, down, and both downward diagonals — that's every direction words are ever placed in, so you never need to scan backward or upward.",
+      "Once you find one word, look nearby — puzzle grids often place multiple theme words in the same general area.",
+      "Words are only ever placed reading left-to-right, top-to-bottom, or diagonally downward (never bottom-to-top or right-to-left) — so once you spot a word's first letter, you only ever need to check those four directions from it, not all eight compass directions."
+    ],
+    "howToPlay": [
+      "Tap the first and last letter of a hidden word.",
+      "Find all eight words from today's theme to complete the puzzle."
+    ]
+  },
+  {
+    "slug": "waffle",
+    "title": "Daily Waffle",
+    "description": "Swap letter tiles to uncover six hidden words — three across, three down — before your swaps run out.",
+    "icon": "🧇",
+    "color": "#e0a72e",
+    "path": "/waffle",
+    "engine": "waffle",
+    "category": "word",
+    "daily": true,
+    "priority": 6,
+    "status": "live",
+    "keywords": [
+      "waffle game",
+      "daily waffle puzzle",
+      "waffle daily challenge",
+      "word swap game",
+      "words from waffle",
+      "words in waffle"
+    ],
+    "related": [
+      "daily-word-game",
+      "word-search"
+    ],
+    "faq": [
+      {
+        "q": "How does the swapping work?",
+        "a": "Tap two tiles to swap their letters. You have 15 swaps to arrange all the letters into six correct five-letter words — three across, three down."
+      },
+      {
+        "q": "What do the tile colors mean?",
+        "a": "Green means the letter is in the right spot. Yellow means it belongs in that word, just a different position. The colors update after every swap, just like Wordle."
+      },
+      {
+        "q": "Is today's puzzle the same for everyone?",
+        "a": "Yes. A daily seed picks the same six-word puzzle and starting arrangement for every player, refreshed at midnight UTC."
+      },
+      {
+        "q": "What happens if I run out of swaps?",
+        "a": "The round ends. If the grid isn't fully solved when your swaps run out, that counts as a loss for the day — a new puzzle arrives tomorrow."
+      },
+      {
+        "q": "Does my progress save if I close the browser?",
+        "a": "Yes, your current grid state and remaining swaps are saved locally in your browser."
+      },
+      {
+        "q": "Do letters ever need to move more than once?",
+        "a": "Sometimes. A letter might need two swaps to reach its final spot, so plan ahead rather than chasing the first green you see."
+      },
+      {
+        "q": "What words am I looking for in Waffle?",
+        "a": "There are six words in the waffle grid — three across, three down — sharing letters where they cross. I built the puzzle from a rotating pool of 30 boards, so the words change day to day, but every letter you need is already on the grid from the start, just scrambled; your job is to swap tiles until all six words read correctly."
+      },
+      {
+        "q": "How do I figure out the words in today's puzzle?",
+        "a": "Watch the tile colors as you swap. Green tiles are already correct, yellow tiles have the right letter in the wrong spot for that word. Use those clues to narrow down which five-letter words fit, rather than guessing blind."
+      },
+      {
+        "q": "Is every Waffle puzzle actually solvable within the swap limit?",
+        "a": "Yes, with room to spare. I build each day's scrambled starting grid by applying exactly 10 random swaps to the finished solution. Since a swap undoes itself, that means every puzzle is guaranteed solvable in 10 moves or fewer — the 15-swap limit leaves you a 5-swap cushion for exploring or recovering from a wrong guess."
+      },
+      {
+        "q": "Are all 10 scrambling swaps guaranteed to move a real tile?",
+        "a": "Not necessarily — each of the 10 scrambling swaps picks two of the grid's 21 active cells completely at random, so it's technically possible (if unlikely) for a swap to pick the same cell twice, which does nothing, or for two swaps to undo each other. Today's puzzle might, in principle, be genuinely solvable in fewer than 10 real moves even though 10 swaps were nominally applied — the 15-swap allowance covers it comfortably either way."
+      },
+      {
+        "q": "If a word has two of the same letter, can both tiles show yellow?",
+        "a": "Not automatically. I check exact matches (green) first, then only credit \"present\" (yellow) for a duplicate letter if that word still has an unclaimed copy of it to match against. So if a word needs one E and you've placed two E's in the wrong spots, only one turns yellow — the other reads as absent. It's the same duplicate-letter rule Wordle uses, not a simpler \"letter is somewhere in the word\" check."
+      },
+      {
+        "q": "What happens if my saved Waffle progress somehow doesn't match today's puzzle?",
+        "a": "Every time the game loads, it verifies your saved grid is a genuine rearrangement of today's real solution — same 21 letters, same 4 permanently blank corner cells — before trusting it. If that check ever fails, it throws the save out and rescrambles a fresh starting grid from today's actual puzzle instead of showing you a broken board."
+      }
+    ],
+    "tips": [
+      "Start with letters you're most confident about — locking in a corner word first often reveals what the crossing words must be.",
+      "A single swap affects two tiles at once, so look for moves that improve both a row word and a column word simultaneously.",
+      "Don't rush to fix a yellow tile immediately if you're not sure of its final position — sometimes it's more efficient to solve other tiles first.",
+      "Count your remaining swaps against how many tiles are still wrong — if the numbers are close, you have no room for wasted moves.",
+      "At the 9 spots where a row word crosses a column word, I color the tile using whichever status is better between the two words — so a green tile there only confirms the letter is correct for at least one of its two words, not necessarily both.",
+      "The grid has exactly 21 real letter tiles — three 5-letter across words and three 5-letter down words sharing 9 crossing points — plus 4 permanently dark corner cells that never hold a letter, so when you're hunting for where a stray tile belongs, you only ever have 21 real candidates to consider, not 25."
+    ],
+    "howToPlay": [
+      "Tap two tiles to swap their letters.",
+      "Arrange all six words correctly within 15 swaps."
+    ]
+  },
+  {
+    "slug": "snake-game",
+    "title": "Daily Snake Challenge",
+    "description": "Guide the snake through a classic arcade challenge — eat today's food sequence without hitting a wall or yourself.",
+    "icon": "🐍",
+    "color": "#6aa84f",
+    "path": "/snake-game",
+    "engine": "snake-game",
+    "category": "card",
+    "daily": true,
+    "priority": 7,
+    "status": "live",
+    "keywords": [
+      "snake game",
+      "daily snake challenge",
+      "classic snake online",
+      "classic snake game",
+      "snake classic arcade game"
+    ],
+    "related": [
+      "connect-four",
+      "2048"
+    ],
+    "faq": [
+      {
+        "q": "Is today's food layout the same for everyone?",
+        "a": "Yes. A daily seed fixes the sequence of food positions, so every player faces the same run, refreshed at midnight UTC."
+      },
+      {
+        "q": "How do I control the snake?",
+        "a": "Use the arrow keys or WASD on desktop, or the on-screen direction buttons on mobile."
+      },
+      {
+        "q": "What happens if I hit a wall or myself?",
+        "a": "The run ends immediately. Your score is how much food you ate before that happened."
+      },
+      {
+        "q": "What counts as a win?",
+        "a": "Eating 10 pieces of food in a single run counts as a win for the day."
+      },
+      {
+        "q": "Can I pause the game?",
+        "a": "Yes, press the spacebar or the pause button to pause and resume."
+      },
+      {
+        "q": "Does my score save if I close the browser?",
+        "a": "Your final score for the day is saved locally once your run ends. Reopening the game shows that result rather than letting you replay the same run."
+      },
+      {
+        "q": "Does Daily Snake Challenge support mods or custom skins?",
+        "a": "Not right now — every player gets the identical board, controls, and food sequence for the day; there's no skin picker or mod loader. That fixed baseline is actually the point of the daily seed: if the ruleset could be modded, a 'same challenge for everyone' comparison wouldn't hold up. If you came here for the standard rules rather than mods, that's exactly what's running today."
+      },
+      {
+        "q": "Is this the classic version of snake?",
+        "a": "Yes. It's the traditional arcade formula on a 20x20 grid: steer to eat food, grow a segment each time, and avoid the walls and your own tail. No power-ups, no gimmicks, just classic rules with a new daily food sequence."
+      },
+      {
+        "q": "Is this 'Snake 2' or a sequel?",
+        "a": "No — there's just the one classic mode here, no numbered sequel or separate 'Snake 2' build. What changes day to day is the food sequence, seeded by the UTC date, not the ruleset."
+      },
+      {
+        "q": "Does the snake speed up as I eat more food?",
+        "a": "No — the game ticks at a fixed 150ms interval for the entire run, from the first move to the last. A longer snake makes the board more dangerous, but it never moves faster."
+      },
+      {
+        "q": "Why doesn't pressing the opposite direction do anything?",
+        "a": "A direct 180-degree reversal is always blocked so you can't turn straight into your own neck — the snake starts facing right, for example, so left is ignored until you turn up or down first."
+      },
+      {
+        "q": "Does an unfinished run save if I close the browser or reload mid-game?",
+        "a": "No — only the final result (your score and whether you won) gets saved once a run ends. If you close the tab mid-run, that attempt is gone; reopening the game gives you a fresh \"ready\" start rather than resuming where you left off, unless you'd already finished today's run, in which case you'll see that saved result instead. That's different from some of the other daily games here, which do checkpoint mid-puzzle progress — Snake's real-time tick loop just isn't built to snapshot a run in progress."
+      },
+      {
+        "q": "How many food coordinates does the game generate for the day, and what happens if one would land on the snake itself?",
+        "a": "80 — far more than the 10 you need to win. They're all pre-generated at once from the day's seed, in order, and if the next coordinate in that sequence happens to fall on a cell the snake's body currently occupies, the game silently skips ahead to the next free coordinate rather than ever spawning food you literally can't reach. You'll never notice this happening; it just means the food you see isn't always sequence position N, it's the first free one at or after N."
+      },
+      {
+        "q": "Does \"Play Again\" start a new official attempt at today's challenge?",
+        "a": "No — Play Again builds a brand-new food sequence from a fresh, non-daily seed and plays it out entirely in memory. It never touches today's saved result, so your one real attempt at the daily challenge stays exactly as it finished; Play Again is just unlimited practice on a different, unofficial layout."
+      }
+    ],
+    "tips": [
+      "Plan a few moves ahead rather than reacting turn by turn — the snake only gets longer, so early paths affect later options.",
+      "Hug the edges deliberately to keep the center open for maneuvering room as your snake grows.",
+      "Avoid boxing yourself into a corner chasing food — sometimes the safer move is to circle back for it later.",
+      "Slow, deliberate turns are safer than rapid direction changes, which can accidentally trigger a reversal into your own body.",
+      "A direction press only takes effect on the next 150ms tick, and only your latest press before that tick counts — mashing several arrow keys quickly won't queue up multiple turns.",
+      "The snake always starts as a 3-segment body dead-center on the 20x20 board, facing right — so on a fresh run your very first real decision (up or down, since a hard reversal into your own neck is blocked) comes up fast, within the first couple of ticks, not after some warm-up stretch."
+    ],
+    "howToPlay": [
+      "Steer the snake to eat the food.",
+      "Avoid hitting the walls or your own tail as the snake grows."
+    ]
+  },
+  {
+    "slug": "2048",
+    "title": "Daily 2048",
+    "description": "Slide, combine, and plan ahead in a compact daily number challenge — with themed spin-off editions to explore on the site.",
+    "icon": "🎯",
+    "color": "#d4945a",
+    "path": "/2048",
+    "engine": "game-2048",
+    "category": "number",
+    "daily": true,
+    "priority": 8,
+    "status": "live",
+    "keywords": [
+      "2048 online",
+      "play 2048",
+      "daily number game",
+      "2048 game",
+      "2048 daily challenge",
+      "2048 tiles",
+      "2048 themes"
+    ],
+    "related": [
+      "cupcake-2048",
+      "memory-game"
+    ],
+    "faq": [
+      {
+        "q": "How do tiles combine?",
+        "a": "When two tiles with the same number collide during a slide, they merge into a single tile showing their sum — for example, two 4 tiles become one 8 tile."
+      },
+      {
+        "q": "What is the goal of the game?",
+        "a": "The aim is to create a tile numbered 2048. Once you reach it you can continue playing to push for even higher values like 4096 or beyond."
+      },
+      {
+        "q": "Does a new board start every day?",
+        "a": "Yes — every player gets the same seeded starting board at midnight UTC, generated from that day's date. Score resets with it, but Best is a running record across every day you've played, not a daily one, so it only changes when you beat your own all-time high."
+      },
+      {
+        "q": "What happens when the board fills up?",
+        "a": "The game ends when every cell is occupied and no adjacent tiles can merge, leaving no legal moves remaining."
+      },
+      {
+        "q": "Does my progress save if I close the tab?",
+        "a": "Yes. Every move you make is saved to your browser automatically, so closing the tab mid-game and coming back later drops you right back into today's board and score — right up until the next UTC reset replaces it."
+      },
+      {
+        "q": "Is there a time limit?",
+        "a": "No. You can think through each move at whatever pace you prefer — there is no clock counting down."
+      },
+      {
+        "q": "Are there themed versions of 2048, like a Taylor Swift or Doge edition?",
+        "a": "Not on this board — I kept it to the classic format, plain numbered tiles from 2 up through 2048 and beyond, no character art, letters, or skins. If you want a themed take on the same slide-and-merge mechanic, Cupcake 2048 is live on this site and swaps the numbers for a themed tile set."
+      },
+      {
+        "q": "Does \"New Game\" give me a fresh random board?",
+        "a": "No — it rebuilds today's board from the same daily seed, so you land on the exact same starting tiles every time you restart. Only tomorrow's UTC reset changes the seed and gives you a genuinely new start."
+      },
+      {
+        "q": "What are the actual odds a new tile spawns as a 2 versus a 4?",
+        "a": "Fixed 90/10 every time: 9 times out of 10 a fresh tile lands as a 2, and 1 time out of 10 it lands as a 4. That's checked independently on every single spawn, so it's entirely possible (just unlikely) to see two or three 4s land in a row."
+      },
+      {
+        "q": "If three matching tiles are lined up and I slide toward them, do all three merge into one tile?",
+        "a": "No — merging is a single left-to-right pass per move, and once two tiles combine, the newly merged tile is skipped for the rest of that pass. So three 4s in a row become one 8 plus one leftover 4, not one 12-equivalent tile. That leftover 4 doesn't merge with the 8 next to it — tiles only ever combine with an equal value — so it just sits there until another 4 lines up next to it on a later move."
+      },
+      {
+        "q": "Why doesn't a light flick of my finger move the board on mobile?",
+        "a": "A swipe only counts once it travels at least 30 pixels from where your finger first touched the screen — that threshold is checked on touch-end before any direction is picked. Shorter taps or accidental drags are ignored outright rather than registering as a (very short) move."
+      }
+    ],
+    "tips": [
+      "Park your highest-value tile in one corner and commit to never moving it. Build a descending chain of values extending from that corner so tiles are always ready to merge inward.",
+      "Limit yourself to sliding in mainly two directions — for example, always right and always down — so your highest tile stays anchored and the chain does not break.",
+      "Avoid filling the row or column your highest tile occupies. Keeping at least one direction of movement free prevents you from painting yourself into a corner.",
+      "When the board starts to feel crowded, pause high-value chasing and focus on merging the smaller tiles elsewhere first. Opening up empty cells buys you more moves before the game ends.",
+      "Tiles keep their exact number past 2048, but the color coding stops there — 4096, 8192, and beyond all reuse the same tile color as 2048 itself, since there's no unique style defined further up.",
+      "When you see three or more identical tiles lined up in the direction you're about to slide, remember only the leading pair merges that move — plan your next slide around the leftover tile rather than expecting a triple-merge windfall."
+    ],
+    "howToPlay": [
+      "Slide every tile in one direction.",
+      "Combine matching values and keep the board open."
+    ]
+  },
+  {
+    "slug": "capital-quiz",
+    "title": "Daily Capital Quiz",
+    "description": "Match each country to its capital city in eight quick multiple-choice rounds — a fresh mix of countries and capitals from around the world every day.",
+    "icon": "🏛️",
+    "color": "#4361c7",
+    "path": "/capital-quiz",
+    "engine": "capital-quiz",
+    "category": "trivia",
+    "daily": true,
+    "priority": 9,
+    "status": "live",
+    "keywords": [
+      "capital cities quiz",
+      "world capitals game",
+      "geography trivia",
+      "capital quiz daily challenge",
+      "country capital quiz",
+      "countries and capitals quiz",
+      "spanish speaking countries quiz",
+      "europe countries quiz",
+      "africa countries quiz"
+    ],
+    "related": [
+      "reaction-test",
+      "memory-game"
+    ],
+    "faq": [
+      {
+        "q": "How many questions are there?",
+        "a": "Eight questions each day, each with four possible capital cities to choose from."
+      },
+      {
+        "q": "Is the quiz the same for everyone?",
+        "a": "Yes. A daily seed picks the same eight countries and answer choices for every player, refreshed at midnight UTC."
+      },
+      {
+        "q": "How many do I need to get right to win?",
+        "a": "Six or more correct out of eight counts as a win for the day."
+      },
+      {
+        "q": "Does my progress save if I close the tab?",
+        "a": "Yes, your progress through the quiz and your final result are saved locally in your browser."
+      },
+      {
+        "q": "Can I replay today's quiz?",
+        "a": "Today's official 8-country quiz stays locked in once you finish it — that result is what counts toward your streak. But a \"Play Again\" button appears on the results screen for a fresh, randomly-drawn 8-country round you can play as many times as you want; those extra rounds don't touch today's saved result or your stats."
+      },
+      {
+        "q": "Is there a time limit per question?",
+        "a": "No time limit on deciding — take as long as you need. Once you pick an answer, you'll see correct/incorrect feedback for about a second and a half before it auto-advances; tap \"Next\" instead if you don't want to wait."
+      },
+      {
+        "q": "Can I choose a specific region, like Europe or Africa, to practice?",
+        "a": "Not yet — there's no region filter. I draw the daily eight from a pool of 60 countries worldwide, and Europe and Africa are both well represented in it: 20 of the 60 are European capitals and 9 are African, so you'll run into them regularly even without a dedicated mode."
+      },
+      {
+        "q": "Are Spanish-speaking countries included?",
+        "a": "Yes — 8 of the 60 countries in the pool are Spanish-speaking: Spain, Mexico, Argentina, Chile, Colombia, Peru, Cuba, and Venezuela. They're mixed into the same daily rotation as everywhere else; there's no dedicated Spanish-speaking-only mode."
+      },
+      {
+        "q": "Is this a countries-and-capitals quiz, or just world capitals?",
+        "a": "Both — each question pairs a country with its capital city, so you're tested on the country-to-capital match, not just naming capitals in isolation."
+      },
+      {
+        "q": "How many Asian countries are in the pool — could I get an all-Asia day?",
+        "a": "18 of the 60 countries are Asian — China, Japan, South Korea, India, Thailand, Vietnam, Indonesia, the Philippines, Malaysia, Singapore, Bangladesh, Pakistan, Saudi Arabia, the UAE, Turkey, Israel, Iran, and Kazakhstan — the single largest region in the pool. Since only 8 of the 60 get drawn each day, a mostly-Asian eight is possible but not something the game curates toward; it's just where the odds land occasionally."
+      },
+      {
+        "q": "What's the smallest region represented in the quiz?",
+        "a": "Oceania, with just 3 entries: Australia, New Zealand, and Fiji. Against 20 European and 18 Asian countries, Oceania shows up far less often in any given day's eight — not filtered out, just a smaller slice of the 60-country pool to begin with."
+      },
+      {
+        "q": "Could one of today's 8 correct capitals also show up as a wrong-answer choice on a different question?",
+        "a": "Yes, and it actually happens. The three wrong answers for any question are drawn from the full 60-country pool minus only that question's own country — not from the countries left over after the day's other seven are picked. So a capital you answer correctly on question 2 can still turn up as a distractor option on question 6 the same day; nothing removes it from later rounds' answer choices."
+      }
+    ],
+    "tips": [
+      "Watch for countries with multiple capital-like cities — the quiz always uses the official capital, not the biggest or most famous one. Tanzania's is Dodoma, not Dar es Salaam; Nigeria's is Abuja, not Lagos; South Africa's is Pretoria, not Cape Town or Johannesburg.",
+      "Use process of elimination on the answer choices — ruling out obviously wrong cities narrows your odds even on unfamiliar countries.",
+      "Pay attention to regional naming patterns — capitals in the same region often share linguistic roots with their country name.",
+      "Don't overthink well-known capitals; the quiz mixes familiar and lesser-known countries, so trust your first instinct on the easy ones.",
+      "Wrong-answer options are drawn from the full 60-country pool, not just nearby countries — so a distractor next to an African capital might be a South American or Southeast Asian one. Once you know the roster, an answer that's obviously from the wrong part of the world is usually the tell.",
+      "Europe (20 countries) and Asia (18) together make up almost two-thirds of the 60-country pool, so brushing up on those two regions covers your best odds on any given day — Oceania's 3 entries (Australia, New Zealand, Fiji) show up far less often by comparison."
+    ],
+    "howToPlay": [
+      "Read the country shown.",
+      "Pick its capital city from four choices."
+    ]
+  },
+  {
+    "slug": "daily-word-game",
+    "title": "The Daily Word",
+    "description": "A focused five-letter word guessing game in the style of Wordle, refreshed every day at midnight UTC.",
+    "icon": "📝",
+    "color": "#58c46e",
+    "path": "/daily-word-game",
+    "engine": "word",
+    "category": "word",
+    "daily": true,
+    "priority": 10,
+    "status": "live",
+    "keywords": [
+      "daily word game",
+      "daily word puzzle",
+      "daily word challenge",
+      "five letter word game",
+      "guess the word game",
+      "wordle alternative game",
+      "daily word puzzle challenge",
+      "words with puzzles",
+      "word games like wordle"
+    ],
+    "related": [
+      "spelling-bee",
+      "daily-word-groups"
+    ],
+    "faq": [
+      {
+        "q": "When does the daily puzzle reset?",
+        "a": "A new puzzle arrives every day at midnight UTC. Everyone around the world plays the same word on the same day."
+      },
+      {
+        "q": "How many guesses do I get?",
+        "a": "You have six attempts to identify the five-letter word. Use each guess strategically to narrow down the possibilities."
+      },
+      {
+        "q": "Does my progress save if I close the browser?",
+        "a": "Yes. Your current guess state and all completed game results are stored locally in your browser on this device, so you can return and pick up exactly where you left off."
+      },
+      {
+        "q": "Can I play yesterday's puzzle?",
+        "a": "No — only today's puzzle is available. A new word replaces the previous one at midnight UTC and the old one is not accessible."
+      },
+      {
+        "q": "What do the tile colors mean after I submit a guess?",
+        "a": "A green tile means the letter is correct and in the right position. Yellow means the letter is in the word but in a different spot. Gray means the letter does not appear in the word at all."
+      },
+      {
+        "q": "Is there a time limit for solving the puzzle?",
+        "a": "No. You can take as long as you need within the same calendar day. There is no clock counting down against you."
+      },
+      {
+        "q": "Is this similar to Wordle?",
+        "a": "Yes — like Wordle, you get six guesses to find a secret five-letter word, with green, yellow, and gray feedback after each guess. If you enjoy word games like Wordle, this is a fresh daily version of that same core mechanic."
+      },
+      {
+        "q": "How many words could today's answer be?",
+        "a": "Today's word is deterministically chosen from a pool of 109 five-letter words, so it's the same puzzle for every player worldwide. Guessing isn't limited to that pool, though — I accept 590 five-letter words in total as valid entries (the 109 possible answers plus 481 additional common words), so a guess doesn't have to be a word that could ever be today's answer."
+      },
+      {
+        "q": "Is there a hint button or clue system?",
+        "a": "Not currently. The only feedback is the green/yellow/gray tile coloring after each guess — there's no separate button that reveals a letter for you."
+      },
+      {
+        "q": "Can I play a shorter or easier daily word puzzle?",
+        "a": "The daily puzzle is always a five-letter word with six guesses — there isn't currently an easier or shorter mode, but every player gets the same word each day so difficulty stays consistent and fair."
+      },
+      {
+        "q": "How does today's word get picked from the pool of 109 answers?",
+        "a": "The 109-word pool is split into two halves, and which half today draws from depends on whether the UTC day count is even or odd — even days pull from the first half, odd days from the second. Within that half, the exact word is picked by hashing today's date and this game's slug into an index. So consecutive days practically always come from opposite halves of the list, not from a single sequential or fully unrestricted random draw."
+      },
+      {
+        "q": "How does the game handle repeated letters in a guess?",
+        "a": "It resolves them in two passes, the same way Wordle does: every letter in the exact right spot is marked green first, and only whatever target letters are left over after that get consumed by yellow matches elsewhere in your guess. So if you guess a letter twice but it only appears once in the target — and that one instance is already green somewhere else in your guess — the second occurrence comes back gray, not yellow."
+      },
+      {
+        "q": "Is there a hard mode that forces me to reuse revealed clues?",
+        "a": "No — this build is adapted from an open-source Wordle clone that included a hard-mode option, and I deliberately left that out along with its random/practice and sharing modes. Every guess is checked only against the 590-word allowed list, not against your previous clues, so you're free to guess anything valid regardless of what you've already learned."
+      }
+    ],
+    "tips": [
+      "Open with a word that covers several high-frequency letters — words rich in E, A, R, I, T, or O reveal the most information from your very first guess.",
+      "Track the gray letters as carefully as the greens. Knowing which letters are definitely absent is just as powerful as knowing which ones are confirmed.",
+      "Once you have a few yellow letters, rearrange them across different positions in your next guess rather than leaving them in the same spots.",
+      "If you have multiple green letters but still face many possibilities, consider a 'sacrifice guess' — a word you know is wrong — to test several candidate letters at once and cut down the remaining options.",
+      "Duplicate letters only clue against whatever is actually left in the target after exact matches are removed — don't assume a second yellow will show up just because you know a letter is in the word; check whether an earlier guess already accounted for every copy of it."
+    ],
+    "howToPlay": [
+      "Enter a five-letter word.",
+      "Use the clues to refine your next guess.",
+      "Solve the daily word before your attempts run out."
+    ]
+  },
+  {
+    "slug": "minesweeper",
+    "title": "Daily Minesweeper",
+    "description": "Clear the classic minesweeper board without hitting a mine — the same grid for everyone today, no solver needed once you learn what the numbers mean.",
+    "icon": "💣",
+    "color": "#6b7280",
+    "path": "/minesweeper",
+    "engine": "minesweeper",
+    "category": "number",
+    "daily": true,
+    "priority": 11,
+    "status": "live",
+    "keywords": [
+      "minesweeper online",
+      "daily minesweeper",
+      "minesweeper daily challenge",
+      "classic minesweeper game",
+      "minesweeper solver",
+      "what do the numbers mean in minesweeper",
+      "infinite minesweeper",
+      "minesweeper infinite",
+      "minesweeper how to play"
+    ],
+    "related": [
+      "daily-sudoku",
+      "cupcake-2048"
+    ],
+    "faq": [
+      {
+        "q": "How big is the board?",
+        "a": "A classic 9x9 grid with 10 mines, refreshed daily."
+      },
+      {
+        "q": "Is the board the same for everyone today?",
+        "a": "Yes. A daily seed places the mines, so every player faces the identical board, refreshed at midnight UTC."
+      },
+      {
+        "q": "How do I flag a suspected mine?",
+        "a": "Right-click a cell, or toggle Flag mode and tap it, to mark it with a flag without revealing it."
+      },
+      {
+        "q": "What happens if I click a mine?",
+        "a": "The round ends immediately and all mines are revealed. A new board arrives tomorrow."
+      },
+      {
+        "q": "What is the safe starting area?",
+        "a": "The center 3x3 of the board is guaranteed mine-free, and I auto-reveal the whole block the moment you load the game — not just one cell. Every one of the middle cell's eight neighbors also sits inside that same safe zone, so it always reads zero adjacent mines, and the reveal floods outward across the full 3x3 automatically."
+      },
+      {
+        "q": "Does my result save?",
+        "a": "Yes — once you win or lose for the day, that result is saved locally and shown if you return."
+      },
+      {
+        "q": "What do the numbers on the board mean?",
+        "a": "Each revealed number tells you how many mines are hidden among that cell's up to eight neighboring cells. A '3' means exactly three of its neighbors are mines — combine that count with adjacent numbers to logically work out which unrevealed cells are safe or dangerous."
+      },
+      {
+        "q": "Is there a solver or hint button?",
+        "a": "No built-in solver or hints — working the board out yourself with the numbers is the whole game. See the tips below for the two logic rules that do basically all of the deducing for you."
+      },
+      {
+        "q": "Is there an infinite or unlimited mode?",
+        "a": "Not a separate mode, but close: everyone still gets the same one shared board per day, refreshed at midnight UTC, and that's the result your stats track. Clear it (or hit a mine) and a \"Play Again\" button appears for a freshly-generated board you can replay as many times as you want — those extra rounds just don't count toward Played/Wins/Streak."
+      },
+      {
+        "q": "How do you play Minesweeper?",
+        "a": "Click any cell to reveal it. The numbers show how many mines touch that cell, so use them to deduce which unrevealed cells are safe and which are mines, flagging the ones you suspect. Clear every non-mine cell without triggering one to win."
+      },
+      {
+        "q": "When I reveal a cell with no adjacent mines, does it only open that one cell?",
+        "a": "Only if it borders a mine. A cell with zero adjacent mines flood-fills outward automatically — every connected zero-adjacency cell reveals at once, plus every numbered cell bordering that empty pocket, all from a single click. It's the same flood-fill the auto-revealed center square uses on load, just triggered anywhere on the board."
+      },
+      {
+        "q": "Does flagging every mine correctly count toward winning?",
+        "a": "No — flags are never checked against actual mine positions. The win condition only looks at whether every non-mine cell has been revealed, so you can clear the board and win without placing a single flag, or with flags sitting on the wrong cells the whole game. Flagging is purely a memory aid for you, not something the game verifies."
+      },
+      {
+        "q": "What are the actual odds any hidden cell outside the safe zone is a mine?",
+        "a": "The board has 81 cells total; 9 of those (the center 3x3) are permanently reserved mine-free, leaving 72 candidate cells. Mines are chosen by shuffling those 72 candidates and taking the first 10, so before you reveal anything nearby, any single outside cell has roughly a 1-in-7 chance (10 of 72) of hiding a mine — the numbers you uncover narrow that down from there."
+      }
+    ],
+    "tips": [
+      "Start from the automatically revealed center and work outward, following the numbers rather than guessing blindly.",
+      "A revealed 0 cell means every neighboring cell is safe — those chain-reveal automatically, so use them to map out large safe zones fast.",
+      "If a numbered cell's count exactly matches its unrevealed neighbors, all of those neighbors are mines — flag them immediately.",
+      "Conversely, if a numbered cell's flagged neighbors already satisfy its count, every other unrevealed neighbor is safe to click.",
+      "A revealed cell showing blank (not a number) means you've hit a zero-adjacency pocket — the flood-fill already cleared every connected zero cell and its bordering numbers for you, so treat a big blank patch as fully solved rather than re-checking cells inside it one by one."
+    ],
+    "howToPlay": [
+      "Click a cell to reveal it.",
+      "Use the numbers to deduce where the mines are, and clear every safe cell."
+    ]
+  },
+  {
+    "slug": "memory-game",
+    "title": "Daily Memory Table",
+    "description": "Play a free daily memory game — turn over a small deck and match every pair with as few moves as possible.",
+    "icon": "🃏",
+    "color": "#5abdd4",
+    "path": "/memory-game",
+    "engine": "memory",
+    "category": "memory",
+    "daily": true,
+    "priority": 12,
+    "status": "live",
+    "keywords": [
+      "memory game online",
+      "daily brain game",
+      "memory game daily challenge",
+      "matching game",
+      "memory game"
+    ],
+    "related": [
+      "2048",
+      "reaction-test"
+    ],
+    "faq": [
+      {
+        "q": "Does the card layout change every day?",
+        "a": "Yes. A daily seed selects 8 symbols from a larger pool and shuffles their positions, so every player gets the same layout on the same day — but it changes at midnight UTC."
+      },
+      {
+        "q": "How many cards are on the board?",
+        "a": "There are 16 cards — 8 pairs of matching symbols arranged in a 4×4 grid."
+      },
+      {
+        "q": "What is the goal of the game?",
+        "a": "Flip all 8 pairs by turning over two cards at a time. If they match, they stay revealed. If not, they flip back. Complete the board using as few moves as possible."
+      },
+      {
+        "q": "Is there a time limit?",
+        "a": "No. The timer tracks how long you take, but there is no penalty for finishing slowly. Take your time and focus on memory."
+      },
+      {
+        "q": "Does my result save if I close the browser?",
+        "a": "Your completed daily result — including your move count and time — is saved locally in your browser, so it will still show even if you close and reopen the tab."
+      },
+      {
+        "q": "Can I replay the same daily board?",
+        "a": "No — Play Again reshuffles into a brand new layout, seeded fresh rather than from the day's seed, so it won't match the original board or any other replay. It's there for extra practice, not for retrying the same puzzle. Today's actual result stays exactly as saved no matter how many times you replay, and your streak and win totals aren't affected either way, since only one win per calendar day counts there; tomorrow's board, with a new daily seed, arrives at midnight UTC."
+      },
+      {
+        "q": "What counts as one move?",
+        "a": "A move is counted once per pair attempt, not per flip — turning over the first card of a pair doesn't add to your count. I only increment it when you flip the second card, whether it matches or not, so 8 is the fewest moves a perfect game can take."
+      },
+      {
+        "q": "How long do cards stay visible before flipping back?",
+        "a": "A matched pair locks face-up after a brief 200ms pause so you can register the match. A mismatched pair stays visible for 700ms before flipping back down — enough time to study both symbols and lock in their positions for later."
+      },
+      {
+        "q": "How is the daily board generated?",
+        "a": "I turn the date and this game's slug into a single daily seed, then use it twice: once to pick 8 symbols out of a pool of 20, and once to shuffle their 16 positions on the board. Both steps run the same way on every device, which is why everyone sees the same layout on the same day."
+      },
+      {
+        "q": "Does my finishing time include the little pause when the last two cards lock in?",
+        "a": "The clock itself is a whole-second counter, not a millisecond stopwatch — it ticks once per second and only stops once every card's status flips to \"discovered,\" which for the last pair lands roughly 200ms after you flip its second card. So that trailing pause is real and the clock is still running through it, but because the counter only moves in full-second steps, it usually doesn't change the number you actually see — it just gets absorbed into whichever second was already ticking, and only occasionally pushes your displayed time over to the next second."
+      },
+      {
+        "q": "When I hit Play Again, do I get today's 8 symbols reshuffled, or a completely different set?",
+        "a": "Possibly a completely different set. Replay draws its own fresh seed, unrelated to today's date, and reruns the full selection from scratch — picking 8 symbols out of the 20-symbol pool again, not just reshuffling the 8 that were on today's official board. So a replay round can include symbols that never appeared on today's board at all."
+      },
+      {
+        "q": "How big is the full symbol pool, and do all 20 show up eventually?",
+        "a": "The pool is a fixed set of 20 icons (dog, cat, frog, butterfly, fox, lion, turtle, unicorn, octopus, shark, bee, blossom, clover, fire, star, gem, target, moon, guitar, dolphin), and only 8 are drawn for any single day — so 12 sit out on a given day. Each day's draw is independent, so there's no guarantee about which 12 get left out or how soon a symbol repeats."
+      }
+    ],
+    "tips": [
+      "Resist the urge to click quickly. Pause after each reveal and consciously rehearse the symbol and its position before moving on.",
+      "Prioritize building a mental map of one corner or row before expanding. Trying to remember the whole board at once is harder than anchoring to a known cluster.",
+      "When you flip a card and do not immediately see its match, hold off on a second flip if possible. Wait for a turn where you have more context — random second flips yield little new information.",
+      "Look for symmetry in your reveals. If you see two identical symbols on the same side of the board, check whether they are neighbors — matching nearby pairs clears space for easier navigation.",
+      "The clock doesn't start until you flip the second card of your very first pair attempt — so take as long as you like studying that opening card before committing to your second flip; it won't cost you any time on the counter.",
+      "Only 8 of the 20 possible symbols appear on any given day, and each day's draw is independent — don't assume a symbol from a previous day is 'due' to repeat or 'used up'; the next 8 are picked from scratch every time."
+    ],
+    "howToPlay": [
+      "Turn over two cards at a time.",
+      "Match every pair using the fewest turns you can."
+    ]
+  },
+  {
+    "slug": "connect-four",
+    "title": "Daily Connect Four",
+    "description": "Drop pieces to connect four in a row before a seeded daily AI opponent beats you to it.",
+    "icon": "🔴",
+    "color": "#e0483e",
+    "path": "/connect-four",
+    "engine": "connect-four",
+    "category": "card",
+    "daily": true,
+    "priority": 13,
+    "status": "live",
+    "keywords": [
+      "connect four game",
+      "connect four daily challenge",
+      "connect four solver",
+      "connect four strategy",
+      "how to win connect four",
+      "connect 4 online",
+      "connect four game strategy",
+      "how to win a game of connect 4"
+    ],
+    "related": [
+      "snake-game",
+      "minesweeper"
+    ],
+    "faq": [
+      {
+        "q": "Who do I play against?",
+        "a": "A daily AI opponent. There's no live multiplayer here — the AI's move pattern is fixed by a daily seed, so everyone faces the same opponent behavior on a given day."
+      },
+      {
+        "q": "Do I go first?",
+        "a": "Yes, you always drop the first piece."
+      },
+      {
+        "q": "How do I win?",
+        "a": "Connect four of your pieces in a row — horizontally, vertically, or diagonally — before the AI does. If the 7x6 board fills up with no winner, it's a draw."
+      },
+      {
+        "q": "Is today's AI opponent the same for everyone?",
+        "a": "Yes. The AI's decision-making is seeded by the UTC date, so every player faces the same AI behavior pattern for the day, even though each game plays out differently based on your own moves."
+      },
+      {
+        "q": "How smart is the AI?",
+        "a": "It plays solidly but not perfectly. Two rules come before anything else: take an immediate win if one's on the board, and block your immediate win if you have one. Outside of those, it picks a column at random, weighted 4x toward the center column over the edges — so it won't hand you the game by playing in a corner, but it also isn't planning two moves ahead. It's a heuristic, not a full solver."
+      },
+      {
+        "q": "Is there a strategy that reliably beats the AI?",
+        "a": "Set up a double threat — a single move that creates two different ways to win on your next turn. I built the AI to look only one move ahead: it takes an immediate win, blocks your immediate win, and otherwise picks a center-weighted random column. It has no lookahead beyond that, so a genuine double threat beats it every time — it can only block one of the two columns, and you take the other."
+      },
+      {
+        "q": "Does my progress save if I close the browser?",
+        "a": "Yes, your in-progress board and your final result for the day are saved locally in your browser."
+      },
+      {
+        "q": "What happens if I close the browser right after dropping a piece, before the AI responds?",
+        "a": "The game checks for exactly this on reload: if the saved board has an odd number of total pieces while the round is still marked \"playing,\" that means your move landed but the AI's reply never got the chance to. Instead of treating it like it's your turn again, it picks up right where it left off — the AI takes its pending move (with the same 500ms pause as normal) as soon as the page loads, so you don't get to sneak in an extra turn or lose your move to a refresh."
+      },
+      {
+        "q": "Does the AI take longer to respond on harder positions?",
+        "a": "No — it's a fixed 500ms pause every single time, whether the position is trivial or the AI is about to block your winning move. The delay is purely cosmetic, there to make the exchange feel like a turn rather than an instant swap; the AI's actual decision (check for a win, check for a block, otherwise weighted-random) is computed instantly and just held for half a second before it lands on the board."
+      },
+      {
+        "q": "What are the actual odds the AI picks the center column over an edge?",
+        "a": "On an empty board, the seven columns are weighted 1-2-3-4-3-2-1 from left to right, so the center column gets 4 of the 16 total weight — a 25% chance — versus roughly 6% for either edge column. Those exact odds only hold on a wide-open board, though: as columns fill up, a full column drops out of the pool entirely and the remaining weights get redistributed among whatever's still playable, so the center's advantage compounds even further as the board fills in."
+      },
+      {
+        "q": "If I hit \"Play Again,\" am I facing the same AI as today's official challenge?",
+        "a": "Not exactly. Play Again seeds the AI's random fallback from a fresh synthetic key generated for that round, not from today's real date — so its win-check and block-check logic behaves identically (those aren't random), but its weighted-random column picks in open positions will differ from what today's actual daily opponent would play. Today's one real result — the one that counts toward your stats — is only ever set by the first board you play, seeded by the actual UTC date."
+      }
+    ],
+    "tips": [
+      "Control the center column early — pieces played in the middle take part in more possible four-in-a-row lines than pieces near the edges.",
+      "Always check the board for your own immediate win before doing anything else, and check whether the AI has one too.",
+      "Try to set up a 'double threat' — a position where you have two different ways to win next turn, so a single block can't stop both.",
+      "Think a couple of moves ahead rather than reacting one column at a time; a move that looks safe now can open a winning line for the AI later."
+    ],
+    "howToPlay": [
+      "Tap a column to drop your piece into it.",
+      "Connect four in a row before the AI does."
+    ]
+  },
+  {
+    "slug": "daily-word-groups",
+    "title": "Daily Word Groups",
+    "description": "Sort a set of words into hidden groups linked by a shared idea — a daily alternative to Connections-style puzzles.",
+    "icon": "🧩",
+    "color": "#9b72d4",
+    "path": "/daily-word-groups",
+    "engine": "word-groups",
+    "category": "word",
+    "daily": true,
+    "priority": 14,
+    "status": "live",
+    "keywords": [
+      "word association game",
+      "daily word groups",
+      "word groups daily challenge",
+      "categorize words game",
+      "connections game",
+      "games like connections",
+      "connections style puzzle"
+    ],
+    "related": [
+      "daily-word-game",
+      "waffle"
+    ],
+    "faq": [
+      {
+        "q": "How do the groups work?",
+        "a": "There are 16 words on the board split into exactly four hidden groups of four. Every word belongs to one — and only one — group linked by a shared theme or association."
+      },
+      {
+        "q": "What do the colors represent?",
+        "a": "Each color corresponds to one of the four groups. The colors are only revealed after you submit a correct set — they are not shown on the board in advance."
+      },
+      {
+        "q": "How many mistakes am I allowed?",
+        "a": "Four. Each wrong guess uses one of four dots shown at the top of the board, and once all four are gone the round ends and every group is revealed, whether you solved them or not."
+      },
+      {
+        "q": "Can I reuse a word in a different group?",
+        "a": "No. Each word belongs to exactly one group. Once a correct group is found and removed, those words are gone from the board."
+      },
+      {
+        "q": "Does the puzzle reset every day?",
+        "a": "Yes. A fresh set of 16 words and four categories is available each day at midnight UTC."
+      },
+      {
+        "q": "Is there a hint if I think I'm close to a group?",
+        "a": "Yes — if three of your four selected words belong to the same still-hidden group, submitting shows 'One away!' instead of 'Not quite!', so you know to swap just one tile rather than rethink the whole guess. It still costs a mistake either way."
+      },
+      {
+        "q": "Are there other games like Connections I can play for free?",
+        "a": "Yes — that's what Daily Word Groups is built to be. Sixteen words, four hidden groups of four, four incorrect guesses allowed, and a new puzzle every day at midnight UTC, all free with no account needed. It's my own build in the category-sorting format NYT Connections popularized, not an official Connections product."
+      },
+      {
+        "q": "Are the daily puzzles generated automatically or written by hand?",
+        "a": "Hand-authored, not generated — each day's 16 words and four categories live in their own dated JSON file, and there's no algorithm assembling them from a word list. The game just fetches whichever file matches today's UTC date."
+      },
+      {
+        "q": "What happens if there's no puzzle published for a given day?",
+        "a": "The fetch simply fails and the page shows \"No puzzle available for today. Check back tomorrow!\" instead of an empty or broken board — it's a plain HTTP-status check, not a crash."
+      },
+      {
+        "q": "What happens to the board the moment I run out of mistakes?",
+        "a": "All four categories reveal at once and the remaining word tiles disappear together — it's not a gradual reveal. Whatever you hadn't solved yet appears in the same found-categories list as the ones you did solve, just without your input."
+      }
+    ],
+    "tips": [
+      "Find the group with the most specific or unusual connection first — broad themes like 'things that are large' can overlap with other categories and lead you into traps set by the puzzle designers.",
+      "Watch for deliberate red herrings. Words that seem obvious members of one group sometimes actually belong to another, and spotting these misdirections is part of the challenge.",
+      "Try to identify a complete set of four before committing to a guess. Partial confidence in three words is not enough — make sure the fourth word fits the theme just as cleanly.",
+      "If you are torn between two possible groupings, use process of elimination: solve the categories you are most certain about first, and the remaining words will reveal the harder group.",
+      "Use the Shuffle button if the current word order is throwing you off — the same 16 words rearranged can make a pattern jump out that wasn't visible before.",
+      "Play Again pulls a different day's already-published puzzle from a roughly 31-puzzle bank rather than generating a new one, so if you replay enough times in one sitting you can eventually see a repeat — it's meant for extra practice, not an endless new-puzzle machine."
+    ],
+    "howToPlay": [
+      "Select words that share a connection.",
+      "Submit a complete group and uncover every category."
+    ]
+  }
+]

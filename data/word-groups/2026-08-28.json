@@ -1,0 +1,9 @@
+{
+  "date": "2026-08-28",
+  "categories": [
+    { "name": "TYPES OF SOUP", "color": "yellow", "words": ["MINESTRONE", "BISQUE", "GAZPACHO", "CHOWDER"] },
+    { "name": "___ SHIP", "color": "green", "words": ["HARD", "FRIEND", "COURT", "WAR"] },
+    { "name": "DOUBLE ___", "color": "blue", "words": ["DUTCH", "DIP", "BASS", "DECKER"] },
+    { "name": "WORDS BEFORE 'ROAD'", "color": "purple", "words": ["RAIL", "HIGH", "BACK", "CROSS"] }
+  ]
+}

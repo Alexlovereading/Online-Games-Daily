@@ -1,0 +1,1722 @@
+[
+  {
+    "id": "sp001",
+    "question": "Which country has hosted the Summer Olympic Games the most times?",
+    "correct": "United States",
+    "distractors": [
+      "France",
+      "United Kingdom",
+      "Germany"
+    ]
+  },
+  {
+    "id": "sp002",
+    "question": "In what year were the first modern Olympic Games held?",
+    "correct": "1896",
+    "distractors": [
+      "1900",
+      "1888",
+      "1904"
+    ]
+  },
+  {
+    "id": "sp003",
+    "question": "How many rings are on the Olympic flag?",
+    "correct": "5",
+    "distractors": [
+      "4",
+      "6",
+      "7"
+    ]
+  },
+  {
+    "id": "sp004",
+    "question": "What do the five Olympic rings traditionally represent?",
+    "correct": "The five inhabited continents",
+    "distractors": [
+      "The five founding nations",
+      "The five original sports",
+      "The five host cities of the first Games"
+    ]
+  },
+  {
+    "id": "sp005",
+    "question": "Which country has won the most Summer Olympic gold medals in history?",
+    "correct": "United States",
+    "distractors": [
+      "Soviet Union",
+      "China",
+      "Germany"
+    ]
+  },
+  {
+    "id": "sp006",
+    "question": "Which swimmer holds the record for the most Olympic gold medals won by any athlete (23)?",
+    "correct": "Michael Phelps",
+    "distractors": [
+      "Mark Spitz",
+      "Ian Thorpe",
+      "Ryan Lochte"
+    ]
+  },
+  {
+    "id": "sp007",
+    "question": "What color medal is awarded for first place at the Olympics?",
+    "correct": "Gold",
+    "distractors": [
+      "Silver",
+      "Bronze",
+      "Platinum"
+    ]
+  },
+  {
+    "id": "sp008",
+    "question": "In which city were the 2008 Summer Olympics held?",
+    "correct": "Beijing",
+    "distractors": [
+      "Shanghai",
+      "Tokyo",
+      "Seoul"
+    ]
+  },
+  {
+    "id": "sp009",
+    "question": "In which city were the 2012 Summer Olympics held?",
+    "correct": "London",
+    "distractors": [
+      "Paris",
+      "Madrid",
+      "Berlin"
+    ]
+  },
+  {
+    "id": "sp010",
+    "question": "In which city were the 2016 Summer Olympics held?",
+    "correct": "Rio de Janeiro",
+    "distractors": [
+      "Sao Paulo",
+      "Buenos Aires",
+      "Lima"
+    ]
+  },
+  {
+    "id": "sp011",
+    "question": "The 2020 Summer Olympics, postponed to 2021, were held in which city?",
+    "correct": "Tokyo",
+    "distractors": [
+      "Osaka",
+      "Seoul",
+      "Beijing"
+    ]
+  },
+  {
+    "id": "sp012",
+    "question": "Which country hosted the 2018 Winter Olympics?",
+    "correct": "South Korea",
+    "distractors": [
+      "Japan",
+      "China",
+      "Norway"
+    ]
+  },
+  {
+    "id": "sp013",
+    "question": "Which country hosted the 2022 Winter Olympics?",
+    "correct": "China",
+    "distractors": [
+      "Japan",
+      "South Korea",
+      "Kazakhstan"
+    ]
+  },
+  {
+    "id": "sp014",
+    "question": "Michael Phelps won a record eight gold medals at a single Olympics held in which city?",
+    "correct": "Beijing",
+    "distractors": [
+      "Athens",
+      "Sydney",
+      "London"
+    ]
+  },
+  {
+    "id": "sp015",
+    "question": "Usain Bolt earned his Olympic fame primarily in which sport?",
+    "correct": "Sprinting",
+    "distractors": [
+      "Long jump",
+      "Swimming",
+      "Cycling"
+    ]
+  },
+  {
+    "id": "sp016",
+    "question": "Gymnastics events at the Olympics include the floor exercise, vault, and which balance-focused apparatus?",
+    "correct": "Balance beam",
+    "distractors": [
+      "Pommel horse",
+      "Rings",
+      "Parallel bars"
+    ]
+  },
+  {
+    "id": "sp017",
+    "question": "In Olympic swimming, what is the name for a race that uses all four competitive strokes in sequence?",
+    "correct": "Individual medley",
+    "distractors": [
+      "Freestyle relay",
+      "Medley relay",
+      "Open water"
+    ]
+  },
+  {
+    "id": "sp018",
+    "question": "How often are the Summer Olympic Games held?",
+    "correct": "Every four years",
+    "distractors": [
+      "Every two years",
+      "Every three years",
+      "Every five years"
+    ]
+  },
+  {
+    "id": "sp019",
+    "question": "Which country led a major boycott of the 1980 Moscow Olympics?",
+    "correct": "United States",
+    "distractors": [
+      "Canada",
+      "Australia",
+      "Japan"
+    ]
+  },
+  {
+    "id": "sp020",
+    "question": "The decathlon, a combined track and field event, consists of how many disciplines?",
+    "correct": "10",
+    "distractors": [
+      "7",
+      "8",
+      "12"
+    ]
+  },
+  {
+    "id": "sp021",
+    "question": "What is the name of the seven-event multi-discipline competition typically contested by female athletes?",
+    "correct": "Heptathlon",
+    "distractors": [
+      "Decathlon",
+      "Pentathlon",
+      "Triathlon"
+    ]
+  },
+  {
+    "id": "sp022",
+    "question": "Jesse Owens won four gold medals at the Olympics held in which city in 1936?",
+    "correct": "Berlin",
+    "distractors": [
+      "Munich",
+      "Vienna",
+      "Amsterdam"
+    ]
+  },
+  {
+    "id": "sp023",
+    "question": "Which US gymnast famously vaulted on an injured ankle to help clinch team gold at the 1996 Atlanta Olympics?",
+    "correct": "Kerri Strug",
+    "distractors": [
+      "Shannon Miller",
+      "Dominique Moceanu",
+      "Amy Chow"
+    ]
+  },
+  {
+    "id": "sp024",
+    "question": "What color medal is awarded for third place at the Olympics?",
+    "correct": "Bronze",
+    "distractors": [
+      "Silver",
+      "Copper",
+      "Gold"
+    ]
+  },
+  {
+    "id": "sp025",
+    "question": "Which country hosted the first modern Olympic Games in 1896?",
+    "correct": "Greece",
+    "distractors": [
+      "Italy",
+      "France",
+      "Egypt"
+    ]
+  },
+  {
+    "id": "sp026",
+    "question": "Simone Biles has become one of the most decorated Olympians in which sport?",
+    "correct": "Gymnastics",
+    "distractors": [
+      "Swimming",
+      "Track and field",
+      "Diving"
+    ]
+  },
+  {
+    "id": "sp027",
+    "question": "Michael Phelps is considered the most decorated Olympian of all time with a career total of 23 gold medals in which sport?",
+    "correct": "Swimming",
+    "distractors": [
+      "Diving",
+      "Rowing",
+      "Water polo"
+    ]
+  },
+  {
+    "id": "sp028",
+    "question": "The Olympic motto \"Citius, Altius, Fortius\" (Faster, Higher, Stronger) is written in which language?",
+    "correct": "Latin",
+    "distractors": [
+      "Greek",
+      "French",
+      "Italian"
+    ]
+  },
+  {
+    "id": "sp029",
+    "question": "Which Winter Olympic sport involves sliding headfirst down an icy track on a small sled?",
+    "correct": "Skeleton",
+    "distractors": [
+      "Luge",
+      "Bobsled",
+      "Biathlon"
+    ]
+  },
+  {
+    "id": "sp030",
+    "question": "Which Winter Olympic sport involves sliding stones across ice toward a target while teammates sweep the ice with brooms?",
+    "correct": "Curling",
+    "distractors": [
+      "Skeleton",
+      "Speed skating",
+      "Bobsled"
+    ]
+  },
+  {
+    "id": "sp031",
+    "question": "Which country hosted the 1994 Winter Olympics in Lillehammer?",
+    "correct": "Norway",
+    "distractors": [
+      "Sweden",
+      "Finland",
+      "Denmark"
+    ]
+  },
+  {
+    "id": "sp032",
+    "question": "The USA ice hockey team's stunning upset of the Soviet Union, known as the \"Miracle on Ice,\" occurred at the Winter Olympics held in which US city?",
+    "correct": "Lake Placid",
+    "distractors": [
+      "Salt Lake City",
+      "Squaw Valley",
+      "Nagano"
+    ]
+  },
+  {
+    "id": "sp033",
+    "question": "How many players from each team are on the court at one time in an NBA game?",
+    "correct": "5",
+    "distractors": [
+      "4",
+      "6",
+      "7"
+    ]
+  },
+  {
+    "id": "sp034",
+    "question": "Which NBA franchise holds the record for the most championship titles won?",
+    "correct": "Boston Celtics",
+    "distractors": [
+      "Los Angeles Lakers",
+      "Chicago Bulls",
+      "Golden State Warriors"
+    ]
+  },
+  {
+    "id": "sp035",
+    "question": "Who became the NBA's all-time leading scorer in 2023, surpassing Kareem Abdul-Jabbar?",
+    "correct": "LeBron James",
+    "distractors": [
+      "Kobe Bryant",
+      "Michael Jordan",
+      "Kevin Durant"
+    ]
+  },
+  {
+    "id": "sp036",
+    "question": "Before LeBron James, which center held the NBA's all-time career scoring record for decades?",
+    "correct": "Kareem Abdul-Jabbar",
+    "distractors": [
+      "Wilt Chamberlain",
+      "Bill Russell",
+      "Moses Malone"
+    ]
+  },
+  {
+    "id": "sp037",
+    "question": "Which legendary center was famous for his unstoppable \"skyhook\" shot?",
+    "correct": "Kareem Abdul-Jabbar",
+    "distractors": [
+      "Wilt Chamberlain",
+      "Hakeem Olajuwon",
+      "Patrick Ewing"
+    ]
+  },
+  {
+    "id": "sp038",
+    "question": "Michael Jordan won all six of his NBA championships with which team?",
+    "correct": "Chicago Bulls",
+    "distractors": [
+      "Washington Wizards",
+      "Indiana Pacers",
+      "New York Knicks"
+    ]
+  },
+  {
+    "id": "sp039",
+    "question": "Which NBA team is based in the San Francisco Bay Area?",
+    "correct": "Golden State Warriors",
+    "distractors": [
+      "Los Angeles Clippers",
+      "Sacramento Kings",
+      "Portland Trail Blazers"
+    ]
+  },
+  {
+    "id": "sp040",
+    "question": "LeBron James is widely known by which nickname?",
+    "correct": "The King",
+    "distractors": [
+      "The Answer",
+      "The Mailman",
+      "The Admiral"
+    ]
+  },
+  {
+    "id": "sp041",
+    "question": "How many minutes long is a standard NBA game, excluding overtime?",
+    "correct": "48",
+    "distractors": [
+      "40",
+      "44",
+      "60"
+    ]
+  },
+  {
+    "id": "sp042",
+    "question": "How many quarters make up a standard NBA basketball game?",
+    "correct": "4",
+    "distractors": [
+      "2",
+      "3",
+      "5"
+    ]
+  },
+  {
+    "id": "sp043",
+    "question": "Which player holds the NBA record for most points scored in a single game, with 100 points in 1962?",
+    "correct": "Wilt Chamberlain",
+    "distractors": [
+      "Kobe Bryant",
+      "Michael Jordan",
+      "Elgin Baylor"
+    ]
+  },
+  {
+    "id": "sp044",
+    "question": "What term describes a player recording double-digit totals in three statistical categories, such as points, rebounds, and assists, in one game?",
+    "correct": "Triple-double",
+    "distractors": [
+      "Grand slam",
+      "Hat trick",
+      "Full house"
+    ]
+  },
+  {
+    "id": "sp045",
+    "question": "Dirk Nowitzki, a Dallas Mavericks legend, hails from which country?",
+    "correct": "Germany",
+    "distractors": [
+      "Austria",
+      "Netherlands",
+      "Spain"
+    ]
+  },
+  {
+    "id": "sp046",
+    "question": "Stephen Curry is widely regarded as one of the greatest shooters in NBA history, especially known for which type of shot?",
+    "correct": "Three-pointers",
+    "distractors": [
+      "Free throws",
+      "Hook shots",
+      "Alley-oops"
+    ]
+  },
+  {
+    "id": "sp047",
+    "question": "The NBA Finals Most Valuable Player trophy is officially named in honor of which basketball legend?",
+    "correct": "Bill Russell",
+    "distractors": [
+      "Wilt Chamberlain",
+      "Magic Johnson",
+      "Larry Bird"
+    ]
+  },
+  {
+    "id": "sp048",
+    "question": "The NBA's regular-season MVP trophy is officially named the Maurice Podoloff Trophy, honoring the league's first what?",
+    "correct": "Commissioner",
+    "distractors": [
+      "Head coach",
+      "Referee",
+      "Team owner"
+    ]
+  },
+  {
+    "id": "sp049",
+    "question": "Kobe Bryant spent his entire 20-year NBA career with which team?",
+    "correct": "Los Angeles Lakers",
+    "distractors": [
+      "Los Angeles Clippers",
+      "Phoenix Suns",
+      "Sacramento Kings"
+    ]
+  },
+  {
+    "id": "sp050",
+    "question": "Which team selected LeBron James with the first overall pick in the 2003 NBA Draft?",
+    "correct": "Cleveland Cavaliers",
+    "distractors": [
+      "Miami Heat",
+      "Los Angeles Lakers",
+      "New York Knicks"
+    ]
+  },
+  {
+    "id": "sp051",
+    "question": "In basketball, what is the term for the violation of taking too many steps without dribbling the ball?",
+    "correct": "Traveling",
+    "distractors": [
+      "Carrying",
+      "Double dribble",
+      "Goaltending"
+    ]
+  },
+  {
+    "id": "sp052",
+    "question": "How many personal fouls typically disqualify a player from an NBA game?",
+    "correct": "6",
+    "distractors": [
+      "5",
+      "4",
+      "7"
+    ]
+  },
+  {
+    "id": "sp053",
+    "question": "What is it called when a player is awarded free throws after being fouled while shooting?",
+    "correct": "Free throws",
+    "distractors": [
+      "Field goals",
+      "Foul shots bonus",
+      "Technical points"
+    ]
+  },
+  {
+    "id": "sp054",
+    "question": "How many players from each team are on the field at one time in American football?",
+    "correct": "11",
+    "distractors": [
+      "10",
+      "12",
+      "9"
+    ]
+  },
+  {
+    "id": "sp055",
+    "question": "What is the championship game of the National Football League called?",
+    "correct": "Super Bowl",
+    "distractors": [
+      "World Series",
+      "Grand Final",
+      "Championship Bowl"
+    ]
+  },
+  {
+    "id": "sp056",
+    "question": "Which two NFL franchises are tied for the most Super Bowl championships won, with six titles each?",
+    "correct": "Pittsburgh Steelers and New England Patriots",
+    "distractors": [
+      "Dallas Cowboys and San Francisco 49ers",
+      "Green Bay Packers and Chicago Bears",
+      "Denver Broncos and Miami Dolphins"
+    ]
+  },
+  {
+    "id": "sp057",
+    "question": "How many points is a touchdown worth in American football?",
+    "correct": "6",
+    "distractors": [
+      "7",
+      "3",
+      "5"
+    ]
+  },
+  {
+    "id": "sp058",
+    "question": "How many points is a standard field goal worth in the NFL?",
+    "correct": "3",
+    "distractors": [
+      "2",
+      "4",
+      "1"
+    ]
+  },
+  {
+    "id": "sp059",
+    "question": "Tom Brady holds the record for the most Super Bowl titles won by a starting quarterback, with how many?",
+    "correct": "7",
+    "distractors": [
+      "5",
+      "6",
+      "8"
+    ]
+  },
+  {
+    "id": "sp060",
+    "question": "Tom Brady won his first six Super Bowl titles while playing for which team?",
+    "correct": "New England Patriots",
+    "distractors": [
+      "Tampa Bay Buccaneers",
+      "New York Giants",
+      "Indianapolis Colts"
+    ]
+  },
+  {
+    "id": "sp061",
+    "question": "Which offensive position is responsible for snapping the football to the quarterback to start each play?",
+    "correct": "Center",
+    "distractors": [
+      "Guard",
+      "Tackle",
+      "Tight end"
+    ]
+  },
+  {
+    "id": "sp062",
+    "question": "In American football, how many downs does an offense get to advance the ball at least 10 yards?",
+    "correct": "4",
+    "distractors": [
+      "3",
+      "5",
+      "2"
+    ]
+  },
+  {
+    "id": "sp063",
+    "question": "Which quarterback holds the NFL career record for most passing touchdowns?",
+    "correct": "Tom Brady",
+    "distractors": [
+      "Peyton Manning",
+      "Drew Brees",
+      "Aaron Rodgers"
+    ]
+  },
+  {
+    "id": "sp064",
+    "question": "Which quarterback led the Green Bay Packers to victory in the first two Super Bowls?",
+    "correct": "Bart Starr",
+    "distractors": [
+      "Brett Favre",
+      "Aaron Rodgers",
+      "Bob Griese"
+    ]
+  },
+  {
+    "id": "sp065",
+    "question": "The dominant Pittsburgh Steelers defense of the 1970s was nicknamed what?",
+    "correct": "Steel Curtain",
+    "distractors": [
+      "Purple People Eaters",
+      "Monsters of the Midway",
+      "Doomsday Defense"
+    ]
+  },
+  {
+    "id": "sp066",
+    "question": "Peyton Manning played for which two NFL franchises during his Hall of Fame career?",
+    "correct": "Indianapolis Colts and Denver Broncos",
+    "distractors": [
+      "Miami Dolphins and Buffalo Bills",
+      "New York Jets and New England Patriots",
+      "Tennessee Titans and Houston Texans"
+    ]
+  },
+  {
+    "id": "sp067",
+    "question": "Which running back holds the NFL's all-time career rushing yards record?",
+    "correct": "Emmitt Smith",
+    "distractors": [
+      "Walter Payton",
+      "Barry Sanders",
+      "Adrian Peterson"
+    ]
+  },
+  {
+    "id": "sp068",
+    "question": "What is it called when the quarterback is tackled behind the line of scrimmage while attempting to pass?",
+    "correct": "Sack",
+    "distractors": [
+      "Blitz",
+      "Pick",
+      "Fumble"
+    ]
+  },
+  {
+    "id": "sp069",
+    "question": "The Green Bay Packers' historic home stadium is known by what name?",
+    "correct": "Lambeau Field",
+    "distractors": [
+      "Soldier Field",
+      "Arrowhead Stadium",
+      "Lincoln Financial Field"
+    ]
+  },
+  {
+    "id": "sp070",
+    "question": "In the NFL, a successful kick after a touchdown that adds one point is called what?",
+    "correct": "Extra point",
+    "distractors": [
+      "Field goal",
+      "Safety",
+      "Two-point drop"
+    ]
+  },
+  {
+    "id": "sp071",
+    "question": "How many innings make up a standard Major League Baseball game?",
+    "correct": "9",
+    "distractors": [
+      "7",
+      "8",
+      "10"
+    ]
+  },
+  {
+    "id": "sp072",
+    "question": "How many players from the defensive team are on the field at once in baseball?",
+    "correct": "9",
+    "distractors": [
+      "8",
+      "10",
+      "11"
+    ]
+  },
+  {
+    "id": "sp073",
+    "question": "What is it called when a batter hits a home run with the bases loaded, scoring four runs?",
+    "correct": "Grand slam",
+    "distractors": [
+      "Home run derby",
+      "Triple play",
+      "Full count"
+    ]
+  },
+  {
+    "id": "sp074",
+    "question": "Who holds Major League Baseball's official all-time career home run record with 762?",
+    "correct": "Barry Bonds",
+    "distractors": [
+      "Hank Aaron",
+      "Babe Ruth",
+      "Alex Rodriguez"
+    ]
+  },
+  {
+    "id": "sp075",
+    "question": "Before Barry Bonds, who held the MLB career home run record for decades with 755?",
+    "correct": "Hank Aaron",
+    "distractors": [
+      "Babe Ruth",
+      "Willie Mays",
+      "Ted Williams"
+    ]
+  },
+  {
+    "id": "sp076",
+    "question": "Babe Ruth became a legend playing the majority of his career for which team?",
+    "correct": "New York Yankees",
+    "distractors": [
+      "Boston Red Sox",
+      "Chicago Cubs",
+      "Cleveland Indians"
+    ]
+  },
+  {
+    "id": "sp077",
+    "question": "What is it called when a pitcher retires every batter he faces over a complete game, with no hits or walks allowed?",
+    "correct": "Perfect game",
+    "distractors": [
+      "No-hitter",
+      "Shutout",
+      "Complete game"
+    ]
+  },
+  {
+    "id": "sp078",
+    "question": "What is it called when a pitcher allows no hits over a complete game, though walks may still occur?",
+    "correct": "No-hitter",
+    "distractors": [
+      "Perfect game",
+      "Shutout",
+      "Quality start"
+    ]
+  },
+  {
+    "id": "sp079",
+    "question": "How many strikes result in a batter being called out in baseball?",
+    "correct": "3",
+    "distractors": [
+      "2",
+      "4",
+      "5"
+    ]
+  },
+  {
+    "id": "sp080",
+    "question": "How many balls result in a batter being awarded a walk to first base?",
+    "correct": "4",
+    "distractors": [
+      "3",
+      "5",
+      "6"
+    ]
+  },
+  {
+    "id": "sp081",
+    "question": "The New York Yankees are famously nicknamed what?",
+    "correct": "Bronx Bombers",
+    "distractors": [
+      "Windy City Sluggers",
+      "Motor City Kings",
+      "Steel City Nine"
+    ]
+  },
+  {
+    "id": "sp082",
+    "question": "Jackie Robinson broke Major League Baseball's color barrier in what year?",
+    "correct": "1947",
+    "distractors": [
+      "1945",
+      "1950",
+      "1955"
+    ]
+  },
+  {
+    "id": "sp083",
+    "question": "Which team did Jackie Robinson play for when he broke MLB's color barrier?",
+    "correct": "Brooklyn Dodgers",
+    "distractors": [
+      "New York Giants",
+      "Boston Braves",
+      "Cincinnati Reds"
+    ]
+  },
+  {
+    "id": "sp084",
+    "question": "What is the championship series of Major League Baseball called?",
+    "correct": "World Series",
+    "distractors": [
+      "Championship Cup",
+      "Pennant Final",
+      "Grand Series"
+    ]
+  },
+  {
+    "id": "sp085",
+    "question": "Which pitcher holds MLB's career strikeout record with 5,714, a mark considered nearly unbreakable?",
+    "correct": "Nolan Ryan",
+    "distractors": [
+      "Randy Johnson",
+      "Roger Clemens",
+      "Steve Carlton"
+    ]
+  },
+  {
+    "id": "sp086",
+    "question": "What term describes a batter hitting a single, double, triple, and home run all in the same game?",
+    "correct": "Cycle",
+    "distractors": [
+      "Grand slam",
+      "Sweep",
+      "Perfect game"
+    ]
+  },
+  {
+    "id": "sp087",
+    "question": "In baseball statistics, what does the abbreviation \"ERA\" stand for?",
+    "correct": "Earned Run Average",
+    "distractors": [
+      "Extra Run Allowance",
+      "Effective Runs Achieved",
+      "Earned Runs Adjusted"
+    ]
+  },
+  {
+    "id": "sp088",
+    "question": "What is the standard distance between each base on an MLB baseball diamond?",
+    "correct": "90 feet",
+    "distractors": [
+      "60 feet",
+      "75 feet",
+      "100 feet"
+    ]
+  },
+  {
+    "id": "sp089",
+    "question": "How many players per team, including the goaltender, are typically on the ice at once in the NHL?",
+    "correct": "6",
+    "distractors": [
+      "5",
+      "7",
+      "4"
+    ]
+  },
+  {
+    "id": "sp090",
+    "question": "What is the name of the championship trophy awarded to the NHL's playoff winner?",
+    "correct": "Stanley Cup",
+    "distractors": [
+      "Lombardi Trophy",
+      "Commissioner's Trophy",
+      "Larry O'Brien Trophy"
+    ]
+  },
+  {
+    "id": "sp091",
+    "question": "Which hockey legend, nicknamed \"The Great One,\" holds numerous NHL career scoring records?",
+    "correct": "Wayne Gretzky",
+    "distractors": [
+      "Gordie Howe",
+      "Mario Lemieux",
+      "Bobby Orr"
+    ]
+  },
+  {
+    "id": "sp092",
+    "question": "Wayne Gretzky rose to stardom in the early part of his career with which NHL team?",
+    "correct": "Edmonton Oilers",
+    "distractors": [
+      "Los Angeles Kings",
+      "New York Rangers",
+      "St. Louis Blues"
+    ]
+  },
+  {
+    "id": "sp093",
+    "question": "How many periods make up a standard NHL hockey game?",
+    "correct": "3",
+    "distractors": [
+      "2",
+      "4",
+      "5"
+    ]
+  },
+  {
+    "id": "sp094",
+    "question": "What is the term for a player scoring three goals in a single hockey game?",
+    "correct": "Hat trick",
+    "distractors": [
+      "Triple play",
+      "Grand slam",
+      "Clean sweep"
+    ]
+  },
+  {
+    "id": "sp095",
+    "question": "The Stanley Cup, first awarded in 1893, is the oldest trophy in which North American professional sport?",
+    "correct": "Ice hockey",
+    "distractors": [
+      "Baseball",
+      "Basketball",
+      "American football"
+    ]
+  },
+  {
+    "id": "sp096",
+    "question": "In hockey, what is it called when a losing team pulls its goaltender for an extra attacker late in the game?",
+    "correct": "Pulling the goalie",
+    "distractors": [
+      "Power play",
+      "Icing",
+      "Empty change"
+    ]
+  },
+  {
+    "id": "sp097",
+    "question": "Which NHL franchise has won the most Stanley Cup championships in history?",
+    "correct": "Montreal Canadiens",
+    "distractors": [
+      "Toronto Maple Leafs",
+      "Detroit Red Wings",
+      "Boston Bruins"
+    ]
+  },
+  {
+    "id": "sp098",
+    "question": "Which English football club has won the most Premier League titles?",
+    "correct": "Manchester United",
+    "distractors": [
+      "Manchester City",
+      "Arsenal",
+      "Liverpool"
+    ]
+  },
+  {
+    "id": "sp099",
+    "question": "How many players, including the goalkeeper, does each team have on the field in soccer?",
+    "correct": "11",
+    "distractors": [
+      "10",
+      "12",
+      "9"
+    ]
+  },
+  {
+    "id": "sp100",
+    "question": "What is the name of Spain's top professional football league?",
+    "correct": "La Liga",
+    "distractors": [
+      "Serie A",
+      "Bundesliga",
+      "Eredivisie"
+    ]
+  },
+  {
+    "id": "sp101",
+    "question": "What is the name of Italy's top professional football league?",
+    "correct": "Serie A",
+    "distractors": [
+      "La Liga",
+      "Ligue 1",
+      "Bundesliga"
+    ]
+  },
+  {
+    "id": "sp102",
+    "question": "What is the name of Germany's top professional football league?",
+    "correct": "Bundesliga",
+    "distractors": [
+      "La Liga",
+      "Serie A",
+      "Primeira Liga"
+    ]
+  },
+  {
+    "id": "sp103",
+    "question": "What is the name of France's top professional football league?",
+    "correct": "Ligue 1",
+    "distractors": [
+      "Serie A",
+      "La Liga",
+      "Bundesliga"
+    ]
+  },
+  {
+    "id": "sp104",
+    "question": "What is the name of England's top professional football league?",
+    "correct": "Premier League",
+    "distractors": [
+      "Championship",
+      "First Division",
+      "Football League"
+    ]
+  },
+  {
+    "id": "sp105",
+    "question": "Which club has won the most UEFA Champions League titles in history?",
+    "correct": "Real Madrid",
+    "distractors": [
+      "AC Milan",
+      "Bayern Munich",
+      "Liverpool"
+    ]
+  },
+  {
+    "id": "sp106",
+    "question": "Lionel Messi spent the majority of his club career, before moving abroad, playing for which Spanish club?",
+    "correct": "Barcelona",
+    "distractors": [
+      "Real Madrid",
+      "Atletico Madrid",
+      "Valencia"
+    ]
+  },
+  {
+    "id": "sp107",
+    "question": "Cristiano Ronaldo signed for Manchester United in 2003 after starring for which Portuguese club?",
+    "correct": "Sporting CP",
+    "distractors": [
+      "Porto",
+      "Benfica",
+      "Braga"
+    ]
+  },
+  {
+    "id": "sp108",
+    "question": "For decades before the 2020 rule change, how many substitutions were teams typically allowed per match in top-level soccer?",
+    "correct": "3",
+    "distractors": [
+      "2",
+      "5",
+      "4"
+    ]
+  },
+  {
+    "id": "sp109",
+    "question": "What term describes a player scoring three goals in a single soccer match?",
+    "correct": "Hat-trick",
+    "distractors": [
+      "Triple strike",
+      "Grand slam",
+      "Full house"
+    ]
+  },
+  {
+    "id": "sp110",
+    "question": "Manchester United is widely known by which nickname?",
+    "correct": "The Red Devils",
+    "distractors": [
+      "The Gunners",
+      "The Reds",
+      "The Blues"
+    ]
+  },
+  {
+    "id": "sp111",
+    "question": "Juventus, one of Italy's most successful clubs, is nicknamed what, meaning \"The Old Lady\"?",
+    "correct": "La Vecchia Signora",
+    "distractors": [
+      "La Beneamata",
+      "I Rossoneri",
+      "Gli Azzurri"
+    ]
+  },
+  {
+    "id": "sp112",
+    "question": "What color card does a referee show to send a player off for a serious foul?",
+    "correct": "Red card",
+    "distractors": [
+      "Yellow card",
+      "Blue card",
+      "Black card"
+    ]
+  },
+  {
+    "id": "sp113",
+    "question": "What color card does a referee show as an official warning to a player?",
+    "correct": "Yellow card",
+    "distractors": [
+      "Red card",
+      "Orange card",
+      "Green card"
+    ]
+  },
+  {
+    "id": "sp114",
+    "question": "What is it called when a tied soccer match is decided by alternating kicks from the penalty spot?",
+    "correct": "Penalty shootout",
+    "distractors": [
+      "Sudden death goal",
+      "Golden kick",
+      "Extra time draw"
+    ]
+  },
+  {
+    "id": "sp115",
+    "question": "Which club has won the most Italian Serie A titles in history?",
+    "correct": "Juventus",
+    "distractors": [
+      "AC Milan",
+      "Inter Milan",
+      "AS Roma"
+    ]
+  },
+  {
+    "id": "sp116",
+    "question": "Which club has won the most Spanish La Liga titles in history?",
+    "correct": "Real Madrid",
+    "distractors": [
+      "Barcelona",
+      "Atletico Madrid",
+      "Sevilla"
+    ]
+  },
+  {
+    "id": "sp117",
+    "question": "Pelé played the majority of his legendary club career with which Brazilian team?",
+    "correct": "Santos FC",
+    "distractors": [
+      "Flamengo",
+      "Corinthians",
+      "Fluminense"
+    ]
+  },
+  {
+    "id": "sp118",
+    "question": "Which country has won the FIFA World Cup the most times, with five titles?",
+    "correct": "Brazil",
+    "distractors": [
+      "Germany",
+      "Italy",
+      "Argentina"
+    ]
+  },
+  {
+    "id": "sp119",
+    "question": "Which country won the very first FIFA World Cup in 1930?",
+    "correct": "Uruguay",
+    "distractors": [
+      "Argentina",
+      "Brazil",
+      "Italy"
+    ]
+  },
+  {
+    "id": "sp120",
+    "question": "Which country hosted the first FIFA World Cup in 1930?",
+    "correct": "Uruguay",
+    "distractors": [
+      "Argentina",
+      "Brazil",
+      "Chile"
+    ]
+  },
+  {
+    "id": "sp121",
+    "question": "Which country won the 2018 FIFA World Cup, held in Russia?",
+    "correct": "France",
+    "distractors": [
+      "Croatia",
+      "Belgium",
+      "England"
+    ]
+  },
+  {
+    "id": "sp122",
+    "question": "Which country won the 2022 FIFA World Cup, held in Qatar?",
+    "correct": "Argentina",
+    "distractors": [
+      "France",
+      "Brazil",
+      "Morocco"
+    ]
+  },
+  {
+    "id": "sp123",
+    "question": "Which country won the 2014 FIFA World Cup, held in Brazil?",
+    "correct": "Germany",
+    "distractors": [
+      "Argentina",
+      "Netherlands",
+      "Spain"
+    ]
+  },
+  {
+    "id": "sp124",
+    "question": "Diego Maradona famously led which country to the 1986 FIFA World Cup title?",
+    "correct": "Argentina",
+    "distractors": [
+      "Brazil",
+      "Uruguay",
+      "Chile"
+    ]
+  },
+  {
+    "id": "sp125",
+    "question": "Which England forward scored a hat-trick in the 1966 World Cup final victory over West Germany?",
+    "correct": "Geoff Hurst",
+    "distractors": [
+      "Bobby Charlton",
+      "Gordon Banks",
+      "Jimmy Greaves"
+    ]
+  },
+  {
+    "id": "sp126",
+    "question": "Which French forward scored a hat-trick in the 2022 World Cup final, although France lost to Argentina on penalties?",
+    "correct": "Kylian Mbappé",
+    "distractors": [
+      "Antoine Griezmann",
+      "Olivier Giroud",
+      "Ousmane Dembele"
+    ]
+  },
+  {
+    "id": "sp127",
+    "question": "Which country hosted the 2014 FIFA World Cup?",
+    "correct": "Brazil",
+    "distractors": [
+      "Argentina",
+      "Chile",
+      "Colombia"
+    ]
+  },
+  {
+    "id": "sp128",
+    "question": "Which country hosted the 2010 FIFA World Cup, the first held on the African continent?",
+    "correct": "South Africa",
+    "distractors": [
+      "Egypt",
+      "Nigeria",
+      "Morocco"
+    ]
+  },
+  {
+    "id": "sp129",
+    "question": "Which country hosted the 2006 FIFA World Cup?",
+    "correct": "Germany",
+    "distractors": [
+      "France",
+      "Netherlands",
+      "Switzerland"
+    ]
+  },
+  {
+    "id": "sp130",
+    "question": "Which country hosted the 1994 FIFA World Cup?",
+    "correct": "United States",
+    "distractors": [
+      "Mexico",
+      "Canada",
+      "Brazil"
+    ]
+  },
+  {
+    "id": "sp131",
+    "question": "How often is the FIFA World Cup held?",
+    "correct": "Every four years",
+    "distractors": [
+      "Every two years",
+      "Every three years",
+      "Every five years"
+    ]
+  },
+  {
+    "id": "sp132",
+    "question": "Which country won the FIFA Women's World Cup in 2019?",
+    "correct": "United States",
+    "distractors": [
+      "Germany",
+      "Japan",
+      "Netherlands"
+    ]
+  },
+  {
+    "id": "sp133",
+    "question": "Pelé won three FIFA World Cup titles playing for which country?",
+    "correct": "Brazil",
+    "distractors": [
+      "Argentina",
+      "Portugal",
+      "Uruguay"
+    ]
+  },
+  {
+    "id": "sp134",
+    "question": "Which German striker is the all-time leading goal scorer in FIFA World Cup history, with 16 goals?",
+    "correct": "Miroslav Klose",
+    "distractors": [
+      "Ronaldo Nazario",
+      "Gerd Muller",
+      "Thomas Muller"
+    ]
+  },
+  {
+    "id": "sp135",
+    "question": "In tennis scoring, what is the term for a score of zero?",
+    "correct": "Love",
+    "distractors": [
+      "Nil",
+      "Zero",
+      "Blank"
+    ]
+  },
+  {
+    "id": "sp136",
+    "question": "How many Grand Slam tournaments make up tennis's annual calendar?",
+    "correct": "4",
+    "distractors": [
+      "3",
+      "5",
+      "6"
+    ]
+  },
+  {
+    "id": "sp137",
+    "question": "Which Grand Slam tennis tournament is played on clay courts in Paris?",
+    "correct": "French Open",
+    "distractors": [
+      "Wimbledon",
+      "US Open",
+      "Australian Open"
+    ]
+  },
+  {
+    "id": "sp138",
+    "question": "Which Grand Slam tennis tournament is played on grass courts in London?",
+    "correct": "Wimbledon",
+    "distractors": [
+      "French Open",
+      "US Open",
+      "Australian Open"
+    ]
+  },
+  {
+    "id": "sp139",
+    "question": "Which Grand Slam tennis tournament is held in Melbourne at the start of the year?",
+    "correct": "Australian Open",
+    "distractors": [
+      "French Open",
+      "Wimbledon",
+      "US Open"
+    ]
+  },
+  {
+    "id": "sp140",
+    "question": "Which Grand Slam tennis tournament is held in New York City?",
+    "correct": "US Open",
+    "distractors": [
+      "Wimbledon",
+      "French Open",
+      "Australian Open"
+    ]
+  },
+  {
+    "id": "sp141",
+    "question": "Which player holds the men's record for most Grand Slam singles titles, surpassing Roger Federer and Rafael Nadal?",
+    "correct": "Novak Djokovic",
+    "distractors": [
+      "Andy Murray",
+      "Pete Sampras",
+      "Andre Agassi"
+    ]
+  },
+  {
+    "id": "sp142",
+    "question": "Serena Williams won 23 Grand Slam singles titles during the Open Era, the most of any player in that era.",
+    "correct": "Serena Williams",
+    "distractors": [
+      "Steffi Graf",
+      "Margaret Court",
+      "Venus Williams"
+    ]
+  },
+  {
+    "id": "sp143",
+    "question": "What is the term for winning all four Grand Slam tennis tournaments in the same calendar year?",
+    "correct": "Calendar Grand Slam",
+    "distractors": [
+      "Golden Slam",
+      "Perfect Season",
+      "Triple Crown"
+    ]
+  },
+  {
+    "id": "sp144",
+    "question": "Rafael Nadal earned the nickname \"King of Clay\" for his dominance on which court surface?",
+    "correct": "Clay",
+    "distractors": [
+      "Grass",
+      "Hard court",
+      "Carpet"
+    ]
+  },
+  {
+    "id": "sp145",
+    "question": "In tennis, after a score of deuce, what is it called when a player wins the very next point?",
+    "correct": "Advantage",
+    "distractors": [
+      "Match point",
+      "Break point",
+      "Set point"
+    ]
+  },
+  {
+    "id": "sp146",
+    "question": "In golf, what term describes completing a hole in one stroke under par?",
+    "correct": "Birdie",
+    "distractors": [
+      "Bogey",
+      "Eagle",
+      "Ace"
+    ]
+  },
+  {
+    "id": "sp147",
+    "question": "In golf, what term describes completing a hole in one stroke over par?",
+    "correct": "Bogey",
+    "distractors": [
+      "Birdie",
+      "Eagle",
+      "Double par"
+    ]
+  },
+  {
+    "id": "sp148",
+    "question": "In golf, what term describes completing a hole in two strokes under par?",
+    "correct": "Eagle",
+    "distractors": [
+      "Birdie",
+      "Albatross",
+      "Bogey"
+    ]
+  },
+  {
+    "id": "sp149",
+    "question": "How many major championships make up men's professional golf's Grand Slam?",
+    "correct": "4",
+    "distractors": [
+      "3",
+      "5",
+      "6"
+    ]
+  },
+  {
+    "id": "sp150",
+    "question": "Which major golf championship is held annually at Augusta National Golf Club?",
+    "correct": "The Masters",
+    "distractors": [
+      "The Open Championship",
+      "US Open",
+      "PGA Championship"
+    ]
+  },
+  {
+    "id": "sp151",
+    "question": "Jack Nicklaus holds the record for the most men's major championship victories, with how many?",
+    "correct": "18",
+    "distractors": [
+      "15",
+      "20",
+      "12"
+    ]
+  },
+  {
+    "id": "sp152",
+    "question": "Tiger Woods won his first Masters title, famously by a record 12-stroke margin, in what year?",
+    "correct": "1997",
+    "distractors": [
+      "1995",
+      "2000",
+      "1999"
+    ]
+  },
+  {
+    "id": "sp153",
+    "question": "In golf, what is a hole-in-one also commonly known as?",
+    "correct": "Ace",
+    "distractors": [
+      "Eagle",
+      "Birdie",
+      "Bullseye"
+    ]
+  },
+  {
+    "id": "sp154",
+    "question": "In golf, what term describes the number of strokes a skilled player is expected to need to complete a hole?",
+    "correct": "Par",
+    "distractors": [
+      "Standard",
+      "Norm",
+      "Baseline"
+    ]
+  },
+  {
+    "id": "sp155",
+    "question": "Which men's golf major, first played in 1860, is the oldest of the four and is held in the United Kingdom?",
+    "correct": "The Open Championship",
+    "distractors": [
+      "The Masters",
+      "US Open",
+      "PGA Championship"
+    ]
+  },
+  {
+    "id": "sp156",
+    "question": "Sprint legend Usain Bolt represents which country?",
+    "correct": "Jamaica",
+    "distractors": [
+      "United States",
+      "Trinidad and Tobago",
+      "Barbados"
+    ]
+  },
+  {
+    "id": "sp157",
+    "question": "Usain Bolt set his still-standing 100m world record of 9.58 seconds at the World Championships held in which city in 2009?",
+    "correct": "Berlin",
+    "distractors": [
+      "Beijing",
+      "Daegu",
+      "Moscow"
+    ]
+  },
+  {
+    "id": "sp158",
+    "question": "What is the approximate standard distance of a marathon race?",
+    "correct": "26.2 miles",
+    "distractors": [
+      "20 miles",
+      "30 miles",
+      "22.5 miles"
+    ]
+  },
+  {
+    "id": "sp159",
+    "question": "How many runners make up a team in track and field's standard 4x100 meter relay?",
+    "correct": "4",
+    "distractors": [
+      "3",
+      "5",
+      "6"
+    ]
+  },
+  {
+    "id": "sp160",
+    "question": "Which track and field field event involves athletes using a long pole to clear a raised bar?",
+    "correct": "Pole vault",
+    "distractors": [
+      "High jump",
+      "Long jump",
+      "Javelin throw"
+    ]
+  },
+  {
+    "id": "sp161",
+    "question": "Which track and field field event involves athletes throwing a heavy metal ball as far as possible?",
+    "correct": "Shot put",
+    "distractors": [
+      "Discus throw",
+      "Hammer throw",
+      "Javelin throw"
+    ]
+  },
+  {
+    "id": "sp162",
+    "question": "Which athlete's long jump world record, set at the 1968 Mexico City Olympics, stood unbroken for 23 years?",
+    "correct": "Bob Beamon",
+    "distractors": [
+      "Carl Lewis",
+      "Jesse Owens",
+      "Mike Powell"
+    ]
+  },
+  {
+    "id": "sp163",
+    "question": "What is the standard length of one lap around an outdoor athletics track?",
+    "correct": "400 meters",
+    "distractors": [
+      "200 meters",
+      "500 meters",
+      "300 meters"
+    ]
+  },
+  {
+    "id": "sp164",
+    "question": "In professional boxing, a championship bout is traditionally scheduled for a maximum of how many rounds?",
+    "correct": "12",
+    "distractors": [
+      "10",
+      "15",
+      "8"
+    ]
+  },
+  {
+    "id": "sp165",
+    "question": "In boxing, what term describes a fighter winning by rendering their opponent unable to continue after being knocked down?",
+    "correct": "Knockout",
+    "distractors": [
+      "Submission",
+      "Decision",
+      "Disqualification"
+    ]
+  },
+  {
+    "id": "sp166",
+    "question": "Which combat sport, popularized worldwide by the UFC, combines striking and grappling techniques from multiple disciplines?",
+    "correct": "Mixed martial arts",
+    "distractors": [
+      "Kickboxing",
+      "Judo",
+      "Wrestling"
+    ]
+  },
+  {
+    "id": "sp167",
+    "question": "The Tour de France, cycling's most famous multi-stage race, is held primarily in which country?",
+    "correct": "France",
+    "distractors": [
+      "Italy",
+      "Spain",
+      "Belgium"
+    ]
+  },
+  {
+    "id": "sp168",
+    "question": "In the Tour de France, what color jersey is worn by the overall race leader?",
+    "correct": "Yellow jersey",
+    "distractors": [
+      "Green jersey",
+      "Polka dot jersey",
+      "White jersey"
+    ]
+  },
+  {
+    "id": "sp169",
+    "question": "How many players are on the field for each team in a standard rugby union match?",
+    "correct": "15",
+    "distractors": [
+      "13",
+      "11",
+      "7"
+    ]
+  },
+  {
+    "id": "sp170",
+    "question": "How many players from each team are on the court at once in indoor volleyball?",
+    "correct": "6",
+    "distractors": [
+      "5",
+      "7",
+      "9"
+    ]
+  },
+  {
+    "id": "sp171",
+    "question": "Since a 2001 rule change, a standard game in table tennis is typically played to how many points, with a two-point win margin required?",
+    "correct": "11",
+    "distractors": [
+      "21",
+      "15",
+      "7"
+    ]
+  },
+  {
+    "id": "sp172",
+    "question": "In cricket, what term describes a bowler taking three wickets on three consecutive deliveries?",
+    "correct": "Hat-trick",
+    "distractors": [
+      "Triple strike",
+      "Clean sweep",
+      "Perfect over"
+    ]
+  }
+]

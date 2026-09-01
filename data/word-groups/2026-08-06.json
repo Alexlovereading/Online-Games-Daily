@@ -1,0 +1,9 @@
+{
+  "date": "2026-08-06",
+  "categories": [
+    { "name": "TROPICAL FRUITS", "color": "yellow", "words": ["MANGO", "PAPAYA", "LYCHEE", "GUAVA"] },
+    { "name": "___ STORM", "color": "green", "words": ["BRAIN", "THUNDER", "FIRE", "SNOW"] },
+    { "name": "FAMOUS DAVIDS", "color": "blue", "words": ["BECKHAM", "BOWIE", "COPPERFIELD", "LETTERMAN"] },
+    { "name": "WORDS BEFORE 'BOARD'", "color": "purple", "words": ["CARD", "SKATE", "SURF", "DART"] }
+  ]
+}

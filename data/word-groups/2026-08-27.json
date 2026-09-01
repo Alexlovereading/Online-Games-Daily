@@ -1,0 +1,9 @@
+{
+  "date": "2026-08-27",
+  "categories": [
+    { "name": "WORLD CAPITALS", "color": "yellow", "words": ["TOKYO", "OSLO", "LIMA", "CAIRO"] },
+    { "name": "EYE ___", "color": "green", "words": ["LASH", "BROW", "LID", "SIGHT"] },
+    { "name": "ABRAHAM LINCOLN ___", "color": "blue", "words": ["LOG", "HAT", "BEARD", "PENNY"] },
+    { "name": "FIRE ___", "color": "purple", "words": ["WORK", "PLACE", "SIDE", "FLY"] }
+  ]
+}

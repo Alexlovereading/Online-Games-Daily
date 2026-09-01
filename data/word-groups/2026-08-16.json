@@ -1,0 +1,9 @@
+{
+  "date": "2026-08-16",
+  "categories": [
+    { "name": "PIZZA TOPPINGS", "color": "yellow", "words": ["PEPPERONI", "MUSHROOM", "OLIVE", "ANCHOVY"] },
+    { "name": "WORDS MEANING 'FAST'", "color": "green", "words": ["RAPID", "FLEET", "NIMBLE", "BRISK"] },
+    { "name": "___ GREEN", "color": "blue", "words": ["BOWLING", "PUTTING", "SOYLENT", "VILLAGE"] },
+    { "name": "FAMOUS ROGERS", "color": "purple", "words": ["FEDERER", "RABBIT", "WATERS", "MOORE"] }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "date": "2026-08-17",
+  "categories": [
+    { "name": "BOARD GAMES", "color": "yellow", "words": ["CHESS", "CHECKERS", "SCRABBLE", "CLUE"] },
+    { "name": "WORDS AFTER 'UNDER'", "color": "green", "words": ["COVER", "WORLD", "GROUND", "SCORE"] },
+    { "name": "TYPES OF CLOUDS", "color": "blue", "words": ["CUMULUS", "STRATUS", "CIRRUS", "NIMBUS"] },
+    { "name": "WATER ___", "color": "purple", "words": ["FALL", "PROOF", "MARK", "FRONT"] }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "date": "2026-09-03",
+  "categories": [
+    { "name": "TYPES OF WINTER WEATHER", "color": "yellow", "words": ["HAIL", "SLEET", "DRIZZLE", "BLIZZARD"] },
+    { "name": "FAMOUS CHRISES", "color": "green", "words": ["ROCK", "HEMSWORTH", "PRATT", "EVANS"] },
+    { "name": "WORDS BEFORE 'TOWN'", "color": "blue", "words": ["DOWN", "GHOST", "CAPE", "CHINA"] },
+    { "name": "SUGAR ___", "color": "purple", "words": ["COAT", "CANE", "PLUM", "RUSH"] }
+  ]
+}

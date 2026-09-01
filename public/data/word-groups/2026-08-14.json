@@ -1,0 +1,9 @@
+{
+  "date": "2026-08-14",
+  "categories": [
+    { "name": "BIRDS OF PREY", "color": "yellow", "words": ["EAGLE", "FALCON", "HAWK", "OWL"] },
+    { "name": "FAMOUS AMYS", "color": "green", "words": ["WINEHOUSE", "ADAMS", "SCHUMER", "GRANT"] },
+    { "name": "___ HOUSE", "color": "blue", "words": ["TREE", "FULL", "DOG", "FIRE"] },
+    { "name": "WORDS MEANING 'STEAL'", "color": "purple", "words": ["PILFER", "SWIPE", "FILCH", "NAB"] }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "date": "2026-08-20",
+  "categories": [
+    { "name": "TYPES OF TREES", "color": "yellow", "words": ["OAK", "MAPLE", "BIRCH", "WILLOW"] },
+    { "name": "___ BEAR", "color": "green", "words": ["POLAR", "TEDDY", "GRIZZLY", "KOALA"] },
+    { "name": "WORDS BEFORE 'STONE'", "color": "blue", "words": ["SAND", "LIME", "KEY", "COBBLE"] },
+    { "name": "ROLLING ___", "color": "purple", "words": ["STONE", "PIN", "HILLS", "THUNDER"] }
+  ]
+}

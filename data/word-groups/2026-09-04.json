@@ -1,0 +1,9 @@
+{
+  "date": "2026-09-04",
+  "categories": [
+    { "name": "CARD SUITS", "color": "yellow", "words": ["HEARTS", "DIAMONDS", "CLUBS", "SPADES"] },
+    { "name": "WORDS MEANING 'CLEVER'", "color": "green", "words": ["ASTUTE", "SHREWD", "SAVVY", "CUNNING"] },
+    { "name": "EAR ___", "color": "blue", "words": ["DRUM", "PLUG", "WORM", "MARK"] },
+    { "name": "THINGS WITH RINGS", "color": "purple", "words": ["SATURN", "BOXING", "TREE", "ONION"] }
+  ]
+}

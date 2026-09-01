@@ -1,0 +1,309 @@
+[
+  {
+    "letters": ["P", "A", "I", "N", "T", "E", "D"],
+    "center": "T",
+    "validWords": [
+      "PAINT", "PAINTED", "TAPE", "TAPED", "DATE", "ANTE", "ANTED", "NEAT",
+      "PATE", "TIDE", "TIED", "DIET", "EDIT", "DENT", "DINT", "PINT",
+      "PATIENT", "PANT", "TAINT", "ATTAIN", "ATTAINED"
+    ],
+    "pangrams": ["PAINTED"]
+  },
+  {
+    "letters": ["M", "O", "N", "K", "E", "Y", "S"],
+    "center": "O",
+    "validWords": [
+      "MONK", "MONKS", "MONEY", "MONKEY", "MONKEYS", "SMOKE", "YOKE", "YOKES",
+      "NOSY", "MOSEY", "MOSEYS", "SMOKY", "MESON", "MONEYS", "OMEN", "OMENS",
+      "SOMEONE", "MOOSE", "YEOMEN"
+    ],
+    "pangrams": ["MONKEYS"]
+  },
+  {
+    "letters": ["B", "L", "A", "S", "T", "E", "D"],
+    "center": "T",
+    "validWords": [
+      "BLAST", "BLASTS", "BLASTED", "BLEAT", "BLEATS", "BLEATED", "TABLE",
+      "TABLES", "TABLED", "STABLE", "STABLED", "TASTE", "TASTED", "DEBATE",
+      "DEBATES", "SALTED", "SLATED", "SLATE", "SLATES", "ABLEST", "LEAST",
+      "STEAL", "STEALS", "TALES", "STALE", "DEALT", "BELT", "BELTS"
+    ],
+    "pangrams": ["BLASTED", "STABLED"]
+  },
+  {
+    "letters": ["P", "L", "A", "S", "T", "I", "C"],
+    "center": "A",
+    "validWords": [
+      "CAST", "CASTS", "LAST", "LASTS", "SPAT", "CLASP", "CLASPS", "CLAP",
+      "CLAPS", "CAPS", "CAPITAL", "CAPITALS", "TACIT", "STATIC", "PASTA",
+      "PASTAS", "ATTIC", "ATLAS", "TALC", "SALT", "PLASTIC"
+    ],
+    "pangrams": ["PLASTIC", "CAPITALS"]
+  },
+  {
+    "letters": ["M", "A", "C", "H", "I", "N", "E"],
+    "center": "N",
+    "validWords": [
+      "CHAIN", "CHIN", "CHINA", "MAIN", "MANIAC", "MECHANIC", "NICHE",
+      "INCH", "ANIME", "AMEN", "MANE", "MEAN", "MINCE", "CANINE", "CINEMA",
+      "ANEMIC", "MACHINE"
+    ],
+    "pangrams": ["MACHINE", "MECHANIC"]
+  },
+  {
+    "letters": ["S", "P", "R", "A", "Y", "E", "D"],
+    "center": "A",
+    "validWords": [
+      "SPRAY", "SPRAYS", "SPRAYED", "SPRAYER", "PRAYED", "PRAY", "PRAYS",
+      "PRAYER", "PRAYERS", "YEARS", "YEAR", "DAYS", "READY", "READS",
+      "READ", "DEAR", "SPARE", "SPARED", "SPADE", "SPADES", "SPAYED",
+      "PARSE", "PARSED", "RAYS"
+    ],
+    "pangrams": ["SPRAYED"]
+  },
+  {
+    "letters": ["T", "R", "A", "I", "N", "E", "D"],
+    "center": "R",
+    "validWords": [
+      "TRAIN", "TRAINED", "RAIN", "RAINED", "RANT", "RANTED", "TIRADE",
+      "TRADE", "TRADED", "DINER", "RIDE", "RIDER", "TIDIER", "TIRED",
+      "NITRATE", "RETAIN", "RETRAIN", "DAINTIER", "RADIANT"
+    ],
+    "pangrams": ["TRAINED", "DAINTIER"]
+  },
+  {
+    "letters": ["C", "A", "P", "T", "O", "R", "S"],
+    "center": "A",
+    "validWords": [
+      "CAST", "CARP", "CARPS", "CARTS", "CART", "TAROT", "COAST", "ACTOR",
+      "ACTORS", "ACTS", "PACTS", "PACT", "CAPTOR", "CAPTORS", "STRAP",
+      "STRAPS", "CARROT", "CARROTS"
+    ],
+    "pangrams": ["CAPTORS"]
+  },
+  {
+    "letters": ["H", "O", "S", "T", "I", "L", "E"],
+    "center": "O",
+    "validWords": [
+      "HOST", "HOSTS", "HOTEL", "HOTELS", "HOLE", "HOLES", "HOLIEST",
+      "TOIL", "TOILS", "TOILET", "SOIL", "SHOT", "SHOTS", "SLOT", "SLOTS",
+      "SLOTH", "LOSE", "LOSES", "SILO", "SILOS", "HOIST", "THOSE", "HOSTILE"
+    ],
+    "pangrams": ["HOSTILE", "HOLIEST"]
+  },
+  {
+    "letters": ["S", "P", "O", "I", "L", "E", "D"],
+    "center": "L",
+    "validWords": [
+      "SPOIL", "SPOILED", "SPOILS", "SOLID", "SOLIDS", "PLOD", "PLODS",
+      "PLODDED", "SLID", "SLIDE", "SLIDES", "SOLE", "SOLES", "LOPE",
+      "LOPED", "LOPES", "PILE", "PILED", "PILES", "SPIEL", "SPIELS",
+      "IDOLS", "IDOL"
+    ],
+    "pangrams": ["SPOILED"]
+  },
+  {
+    "letters": ["C", "L", "O", "T", "H", "E", "D"],
+    "center": "O",
+    "validWords": [
+      "CLOTH", "CLOTHED", "CLOT", "HOLD", "HOLE", "HOLED", "HOTEL", "TOLD",
+      "COLD", "COLT", "CLOTHE", "ECHO", "ECHOED", "TOOTHED", "LOCH",
+      "DOLE", "DOLED", "TOOLED", "LOOTED", "LOOT"
+    ],
+    "pangrams": ["CLOTHED"]
+  },
+  {
+    "letters": ["P", "I", "C", "K", "L", "E", "D"],
+    "center": "I",
+    "validWords": [
+      "PICK", "PICKED", "PICKLE", "PICKLED", "LICK", "LICKED", "KICK",
+      "KICKED", "CLICK", "CLICKED", "DICE", "DICED", "PIKE", "ICED",
+      "DIKE", "CLIP", "CLIPPED"
+    ],
+    "pangrams": ["PICKLED"]
+  },
+  {
+    "letters": ["B", "U", "C", "K", "L", "E", "D"],
+    "center": "U",
+    "validWords": [
+      "BUCK", "BUCKED", "BUCKLE", "BUCKLED", "DUCK", "DUCKED", "LUCK",
+      "CLUCK", "CLUCKED", "CUED", "CLUE", "CLUED", "BULK", "BULKED",
+      "DUKE", "BLUE"
+    ],
+    "pangrams": ["BUCKLED"]
+  },
+  {
+    "letters": ["C", "R", "U", "M", "P", "L", "E"],
+    "center": "U",
+    "validWords": [
+      "CRUMPLE", "CURL", "CURE", "LUMP", "PLUME", "RUMPLE", "RUMP",
+      "CURLER", "CLUE", "LURE", "MULE", "PURE", "PUREE", "PLUM", "PLUMP",
+      "CRUEL"
+    ],
+    "pangrams": ["CRUMPLE"]
+  },
+  {
+    "letters": ["S", "T", "A", "M", "P", "E", "D"],
+    "center": "A",
+    "validWords": [
+      "STAMP", "STAMPED", "STAMPS", "STEAM", "STEAMED", "TEAM", "TEAMS",
+      "MEAT", "MEATS", "TAPE", "TAPED", "TAPES", "PASTE", "PASTED",
+      "SPAT", "SPATE", "DATE", "DATES", "MATE", "MATES", "MATED",
+      "STEAD", "ADEPT", "ADAPTS", "ADAPT"
+    ],
+    "pangrams": ["STAMPED"]
+  },
+  {
+    "letters": ["C", "L", "I", "M", "A", "T", "E"],
+    "center": "A",
+    "validWords": [
+      "CLAIM", "CLIMATE", "MALICE", "CLIMATIC", "ITALIC", "ATTIC", "TAME",
+      "TALE", "TALC", "MALT", "EMAIL", "MATTE", "LATTE", "TACIT",
+      "CATTLE", "ALIT", "MAIL", "CAMEL", "TAMALE"
+    ],
+    "pangrams": ["CLIMATE"]
+  },
+  {
+    "letters": ["F", "O", "R", "M", "U", "L", "A"],
+    "center": "O",
+    "validWords": [
+      "FORM", "FOUL", "FLOUR", "FLORA", "FORMAL", "FORUM", "MORAL",
+      "LOAF", "LOAM", "ROAM", "ROAR", "ARMOR", "AROMA", "FORMULA",
+      "FLOOR", "ORAL", "MOOR", "RUMOR"
+    ],
+    "pangrams": ["FORMULA"]
+  },
+  {
+    "letters": ["M", "O", "D", "E", "S", "T", "Y"],
+    "center": "O",
+    "validWords": [
+      "MODE", "MODES", "DOSE", "DOES", "DOTS", "TOYS", "MOTE", "MOTES",
+      "MOODY", "MOODS", "MOOD", "TOYED", "TOMES", "TOME", "DEMOTES",
+      "DEMOTE", "MODEST", "MODESTY"
+    ],
+    "pangrams": ["MODESTY"]
+  },
+  {
+    "letters": ["N", "O", "B", "I", "L", "T", "Y"],
+    "center": "O",
+    "validWords": [
+      "NOBLY", "LOIN", "TOIL", "LOOT", "BOIL", "BLOT", "LION", "LOTION",
+      "BIOTIN", "INTO", "OBIT", "NOBILITY", "BOOT", "TOOL", "ONTO",
+      "BOOTY", "BOLT", "BILLION"
+    ],
+    "pangrams": ["NOBILITY"]
+  },
+  {
+    "letters": ["C", "A", "P", "T", "I", "V", "E"],
+    "center": "A",
+    "validWords": [
+      "CAPTIVE", "CAVE", "PACT", "PACE", "TAPE", "VAPE", "ACTIVE",
+      "ATTIC", "PICA", "TACIT", "CAPE", "PATE", "CAVEAT", "VACATE",
+      "CAPITA", "APIECE"
+    ],
+    "pangrams": ["CAPTIVE"]
+  },
+  {
+    "letters": ["P", "O", "D", "C", "A", "S", "T"],
+    "center": "A",
+    "validWords": [
+      "PODCAST", "COAST", "COASTS", "TOADS", "TOAD", "CAST", "CASTS",
+      "CAPS", "TAPS", "SPAT", "PAST", "PASTA", "COATS", "COAT",
+      "ADOPTS", "ADOPT"
+    ],
+    "pangrams": ["PODCAST"]
+  },
+  {
+    "letters": ["G", "R", "A", "N", "T", "E", "D"],
+    "center": "A",
+    "validWords": [
+      "GRANT", "GRANTED", "GRATE", "GRATED", "GREAT", "GARDEN", "GARDENED",
+      "DANGER", "RANTED", "RANGE", "RANGED", "TANGENT", "AGENT", "AGENDA",
+      "EARNED", "EARN", "NEAR", "NEARED", "DARE", "DARTED", "DART",
+      "TREAD", "GRAND", "GRANDER"
+    ],
+    "pangrams": ["GRANTED"]
+  },
+  {
+    "letters": ["P", "A", "R", "K", "I", "N", "G"],
+    "center": "A",
+    "validWords": [
+      "PARK", "PARKING", "RANK", "RANG", "RAIN", "GRAIN", "PAIN", "PAIR",
+      "PAIRING", "PARING", "PRANK", "NAPKIN", "PARKA", "AGAIN", "AIRING",
+      "PAGAN", "RAGING"
+    ],
+    "pangrams": ["PARKING"]
+  },
+  {
+    "letters": ["M", "A", "R", "K", "E", "T", "D"],
+    "center": "A",
+    "validWords": [
+      "MARKET", "MARKETED", "MARKED", "MAKER", "RAKE", "RAKED", "TAKE",
+      "TAKER", "DARK", "DART", "DARE", "DARED", "DATE", "RATE", "RATED",
+      "TRADE", "TRADED", "TREAD", "TREAT", "TREATED", "KART", "MEAT",
+      "TAMER", "TEAM", "TEAMED"
+    ],
+    "pangrams": ["MARKETED"]
+  },
+  {
+    "letters": ["C", "A", "P", "T", "I", "O", "N"],
+    "center": "T",
+    "validWords": [
+      "CAPTION", "ACTION", "TOPIC", "ATOP", "PAINT", "PACT", "COAT",
+      "ANTIC", "TONIC", "OPTIC", "OPTION", "TAPIOCA", "ATTIC", "ATTAIN",
+      "CATNIP", "CAPTAIN"
+    ],
+    "pangrams": ["CAPTION"]
+  },
+  {
+    "letters": ["D", "E", "C", "I", "M", "A", "L"],
+    "center": "I",
+    "validWords": [
+      "DECIMAL", "MEDIA", "MEDIAL", "CLAIM", "CLAIMED", "MAIL", "MILD",
+      "MILE", "IDEAL", "IDEA", "LIME", "DIME", "MEDIC", "AIMED", "MICA",
+      "ACID", "LIED", "DIAL"
+    ],
+    "pangrams": ["DECIMAL", "CLAIMED"]
+  },
+  {
+    "letters": ["S", "A", "L", "V", "G", "E", "D"],
+    "center": "A",
+    "validWords": [
+      "SALVAGE", "SALVAGED", "SAVED", "SAVE", "GAVE", "GAVEL", "LEAD",
+      "LEADS", "DEALS", "DEAL", "GLAD", "GLADE", "GLADES", "LAGS",
+      "SLAVE", "VALE", "VALES", "GALE", "GALES", "SAGE", "SAGA", "AGED",
+      "GAVELS"
+    ],
+    "pangrams": ["SALVAGED"]
+  },
+  {
+    "letters": ["M", "I", "N", "G", "L", "E", "D"],
+    "center": "I",
+    "validWords": [
+      "MINGLE", "MINGLED", "MINE", "MINED", "MILD", "MILE", "DINE",
+      "DINGLE", "DIME", "LINED", "LINE", "MELDING", "GLIDE", "INDEED",
+      "DENIM", "MINDED"
+    ],
+    "pangrams": ["MINGLED", "MELDING"]
+  },
+  {
+    "letters": ["P", "L", "A", "N", "T", "E", "D"],
+    "center": "A",
+    "validWords": [
+      "PLANT", "PLANTED", "PLATE", "PLATED", "PLANE", "PLANED", "PANEL",
+      "PANELED", "PLEAT", "PLEATED", "LEANT", "LEAN", "LEAP", "LEAPT",
+      "NEAT", "PANT", "PANTED", "TALENT", "PETAL"
+    ],
+    "pangrams": ["PLANTED"]
+  },
+  {
+    "letters": ["I", "N", "V", "O", "K", "E", "D"],
+    "center": "E",
+    "validWords": [
+      "INVOKE", "INVOKED", "VEIN", "DOVE", "DIVE", "NODE", "DONE",
+      "EVOKE", "EVOKED", "OVEN", "IODINE", "VIDEO", "DEVOID", "KEEN",
+      "KNEE", "DEVEIN", "INDEED", "DENIED"
+    ],
+    "pangrams": ["INVOKED"]
+  }
+]

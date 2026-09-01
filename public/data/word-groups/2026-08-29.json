@@ -1,0 +1,9 @@
+{
+  "date": "2026-08-29",
+  "categories": [
+    { "name": "TYPES OF CAKE", "color": "yellow", "words": ["POUND", "SPONGE", "ANGEL", "DEVIL"] },
+    { "name": "WORDS MEANING 'QUIET'", "color": "green", "words": ["HUSHED", "MUTED", "SILENT", "TRANQUIL"] },
+    { "name": "WING ___", "color": "blue", "words": ["SPAN", "MAN", "TIP", "BACK"] },
+    { "name": "FAMOUS WILLIAMS", "color": "purple", "words": ["SHAKESPEARE", "VENUS", "ROBIN", "PHARRELL"] }
+  ]
+}

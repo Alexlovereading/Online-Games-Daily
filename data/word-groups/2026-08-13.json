@@ -1,0 +1,9 @@
+{
+  "date": "2026-08-13",
+  "categories": [
+    { "name": "PLANETS IN OUR SOLAR SYSTEM", "color": "yellow", "words": ["MARS", "VENUS", "SATURN", "JUPITER"] },
+    { "name": "TYPES OF HATS", "color": "green", "words": ["FEDORA", "BERET", "STETSON", "BOWLER"] },
+    { "name": "___ CAKE", "color": "blue", "words": ["CUP", "CHEESE", "PAN", "LAYER"] },
+    { "name": "HONEY ___", "color": "purple", "words": ["BEE", "MOON", "DEW", "COMB"] }
+  ]
+}

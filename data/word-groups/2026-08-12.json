@@ -1,0 +1,9 @@
+{
+  "date": "2026-08-12",
+  "categories": [
+    { "name": "MUSICAL INSTRUMENTS", "color": "yellow", "words": ["VIOLIN", "TRUMPET", "CELLO", "OBOE"] },
+    { "name": "WORDS MEANING 'BIG'", "color": "green", "words": ["VAST", "COLOSSAL", "MAMMOTH", "IMMENSE"] },
+    { "name": "THINGS IN A SCHOOL", "color": "blue", "words": ["HALL", "LOCKER", "GYM", "CAFETERIA"] },
+    { "name": "___ MAN", "color": "purple", "words": ["SUPER", "SPIDER", "IRON", "PITCH"] }
+  ]
+}

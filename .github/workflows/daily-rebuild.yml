@@ -1,0 +1,50 @@
+name: Daily rebuild and deploy
+
+# The site is a static export (output: "export") with every game's "today's
+# date" baked into the HTML at build time (see components/DateStamp.tsx and
+# lib/engine-registry.ts's initialDateKey plumbing). Without a rebuild after
+# each UTC midnight, that baked-in date silently goes stale until the next
+# manual `wrangler deploy` — this workflow closes that gap by rebuilding and
+# redeploying automatically, shortly after the daily puzzle rollover.
+#
+# Requires a repo secret named CLOUDFLARE_API_TOKEN (Cloudflare dashboard →
+# My Profile → API Tokens → a token scoped at least to Workers Scripts:Edit
+# for this account). If wrangler reports an ambiguous/multiple-account
+# error, also add a CLOUDFLARE_ACCOUNT_ID secret and pass it through below.
+#
+# This does NOT make the "today" date instantaneously accurate — GitHub's
+# scheduled triggers are best-effort and can run several minutes late
+# (worse under platform load), and the build+deploy itself takes ~1-2
+# minutes on top of that. Treat this as "wrong for at most a small window
+# after UTC midnight, right the rest of the day" rather than a guarantee.
+# After adding the secret, trigger this workflow manually once (Actions
+# tab → this workflow → "Run workflow") to confirm it actually succeeds —
+# nothing here can self-verify that the secret is configured correctly.
+on:
+  schedule:
+    - cron: "2 0 * * *" # 00:02 UTC daily — close to the puzzle rollover, offset from :00 to avoid GitHub's top-of-hour scheduling congestion
+  workflow_dispatch: {}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 11
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      - run: pnpm build
+
+      - run: npx wrangler deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
