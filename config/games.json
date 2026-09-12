@@ -21,7 +21,9 @@
     ],
     "related": [
       "2048",
-      "daily-sudoku"
+      "daily-sudoku",
+      "memory-game",
+      "reaction-test"
     ],
     "faq": [
       {
@@ -107,8 +109,10 @@
       "sudoku solving techniques"
     ],
     "related": [
-      "daily-word-game",
-      "2048"
+      "minesweeper",
+      "2048",
+      "cupcake-2048",
+      "word-search"
     ],
     "faq": [
       {
@@ -207,7 +211,9 @@
     ],
     "related": [
       "memory-game",
-      "capital-quiz"
+      "snake-game",
+      "capital-quiz",
+      "connect-four"
     ],
     "faq": [
       {
@@ -301,7 +307,9 @@
     ],
     "related": [
       "daily-word-game",
-      "daily-word-groups"
+      "daily-word-groups",
+      "word-search",
+      "waffle"
     ],
     "faq": [
       {
@@ -399,7 +407,9 @@
     ],
     "related": [
       "daily-word-game",
-      "waffle"
+      "waffle",
+      "spelling-bee",
+      "daily-word-groups"
     ],
     "faq": [
       {
@@ -489,7 +499,9 @@
     ],
     "related": [
       "daily-word-game",
-      "word-search"
+      "word-search",
+      "daily-word-groups",
+      "spelling-bee"
     ],
     "faq": [
       {
@@ -575,7 +587,9 @@
     ],
     "related": [
       "connect-four",
-      "2048"
+      "2048",
+      "reaction-test",
+      "capital-quiz"
     ],
     "faq": [
       {
@@ -671,6 +685,8 @@
     ],
     "related": [
       "cupcake-2048",
+      "daily-sudoku",
+      "minesweeper",
       "memory-game"
     ],
     "faq": [
@@ -757,7 +773,9 @@
     ],
     "related": [
       "reaction-test",
-      "memory-game"
+      "memory-game",
+      "daily-word-groups",
+      "daily-word-game"
     ],
     "faq": [
       {
@@ -847,7 +865,9 @@
     ],
     "related": [
       "spelling-bee",
-      "daily-word-groups"
+      "daily-word-groups",
+      "waffle",
+      "word-search"
     ],
     "faq": [
       {
@@ -941,7 +961,9 @@
     ],
     "related": [
       "daily-sudoku",
-      "cupcake-2048"
+      "2048",
+      "memory-game",
+      "connect-four"
     ],
     "faq": [
       {
@@ -1029,8 +1051,10 @@
       "memory game"
     ],
     "related": [
-      "2048",
-      "reaction-test"
+      "reaction-test",
+      "capital-quiz",
+      "minesweeper",
+      "cupcake-2048"
     ],
     "faq": [
       {
@@ -1119,7 +1143,9 @@
     ],
     "related": [
       "snake-game",
-      "minesweeper"
+      "minesweeper",
+      "daily-sudoku",
+      "2048"
     ],
     "faq": [
       {
@@ -1201,7 +1227,9 @@
     ],
     "related": [
       "daily-word-game",
-      "waffle"
+      "waffle",
+      "spelling-bee",
+      "word-search"
     ],
     "faq": [
       {

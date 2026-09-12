@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getGameBySlug, type GameConfig } from "@/lib/games";
+import { CATEGORY_LABELS, getGameBySlug, type GameConfig } from "@/lib/games";
 
 export function SeoBlocks({ config }: { config: GameConfig }) {
   const relatedGames = config.related
@@ -60,19 +60,47 @@ export function SeoBlocks({ config }: { config: GameConfig }) {
             <p className="text-xs font-bold uppercase tracking-widest text-subtle-foreground">
               Next on the desk
             </p>
-            <h2 className="font-display text-2xl mb-4 mt-1">Related games</h2>
+            <h2 className="font-display text-2xl mb-4 mt-1">
+              More daily puzzles to play after {config.title}
+            </h2>
+            {/* Each card links with the game's real title as the anchor text and
+                carries its own one-line description — these are the only
+                in-content internal links a game page has, so they do the work of
+                passing crawl signal to the rest of the roster. Keep the anchor
+                text descriptive; don't collapse it back to "Play →". */}
             <div className="grid gap-3 sm:grid-cols-2">
               {relatedGames.map((game) => (
-                <Link
-                  href={game.path}
+                <div
                   key={game.slug}
-                  className="flex items-center justify-between gap-3 rounded-lg border border-border bg-card p-4 text-card-foreground transition-colors hover:border-primary"
+                  className="relative rounded-lg border border-border bg-card p-4 text-card-foreground transition-colors hover:border-primary"
                 >
-                  <span>{game.title}</span>
-                  <span aria-hidden="true">→</span>
-                </Link>
+                  <div className="flex items-center gap-2">
+                    {game.icon && <span aria-hidden="true">{game.icon}</span>}
+                    <Link
+                      href={game.path}
+                      className="font-bold text-foreground after:absolute after:inset-0"
+                    >
+                      {game.title}
+                    </Link>
+                    <span className="ml-auto text-xs font-bold uppercase tracking-wide text-subtle-foreground">
+                      {CATEGORY_LABELS[game.category]}
+                    </span>
+                  </div>
+                  <p className="mt-2 text-sm text-subtle-foreground">{game.description}</p>
+                </div>
               ))}
             </div>
+            <p className="mt-5 text-sm text-subtle-foreground">
+              Or browse{" "}
+              <Link href={`/category/${config.category}`} className="text-link transition-colors hover:text-foreground">
+                all {CATEGORY_LABELS[config.category].toLowerCase()} on the site
+              </Link>{" "}
+              and{" "}
+              <Link href="/#game-index" className="text-link transition-colors hover:text-foreground">
+                the full daily game list
+              </Link>
+              .
+            </p>
           </section>
         )}
       </div>

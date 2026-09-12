@@ -157,6 +157,64 @@ export default async function CategoryPage({
           </PageAdRails>
         </section>
 
+        {/* The tab strip above is a client-side switcher (buttons, not anchors),
+            so without this list a category page emits zero crawlable links to
+            the games it is supposed to be the hub for. Keep these as real
+            <Link>s with the game title as the anchor text. */}
+        <section className="site-shell mt-20">
+          <p className="eyebrow">Every game in this category</p>
+          <h2 className="font-display text-3xl font-bold text-foreground mt-2">
+            All {label.toLowerCase()} on Online Games Daily
+          </h2>
+          <ul className="mt-8 grid gap-4 sm:grid-cols-2">
+            {games.map((game) => (
+              <li
+                key={game.slug}
+                className="relative flex flex-col rounded-lg border border-border bg-card p-5 transition-colors hover:border-primary"
+              >
+                <div className="flex items-center gap-2">
+                  {game.icon && <span className="text-xl" aria-hidden="true">{game.icon}</span>}
+                  <h3 className="font-display text-lg font-bold text-foreground">
+                    {game.status === "live" ? (
+                      <Link href={game.path} className="after:absolute after:inset-0">
+                        {game.title}
+                      </Link>
+                    ) : (
+                      game.title
+                    )}
+                  </h3>
+                </div>
+                <p className="mt-2 text-sm text-subtle-foreground">{game.description}</p>
+                {game.status === "live" && (
+                  <span className="mt-4 text-sm font-bold text-link">
+                    Play {game.title} <span aria-hidden="true">→</span>
+                  </span>
+                )}
+              </li>
+            ))}
+          </ul>
+
+          <div className="mt-10 border-t border-border pt-6">
+            <p className="text-sm text-subtle-foreground">
+              Other categories:{" "}
+              {cats
+                .filter((other) => other !== cat)
+                .map((other, index, list) => (
+                  <span key={other}>
+                    <Link
+                      href={`/category/${other}`}
+                      className="text-link transition-colors hover:text-foreground"
+                    >
+                      {CATEGORY_LABELS[other]}
+                    </Link>
+                    {index < list.length - 1 ? ", " : ""}
+                  </span>
+                ))}
+              .
+            </p>
+          </div>
+        </section>
+
         <section className="site-shell mt-16 pb-16">
           <Ads variant="bottom" />
         </section>

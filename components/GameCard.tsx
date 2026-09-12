@@ -54,7 +54,7 @@ export function GameCard({ game, index }: { game: GameConfig; index: number }) {
       <div className="flex items-center justify-between gap-2 border-t border-border/60 px-4 py-3">
         <span className="font-display text-xs italic tracking-wide text-subtle-foreground">0{index + 1}</span>
         {isLive ? (
-          <Link href={game.path} className={buttonVariants({ variant: "primary", size: "sm" })}>Play <span aria-hidden="true">→</span></Link>
+          <Link href={game.path} className={buttonVariants({ variant: "primary", size: "sm" })}>Play<span className="sr-only"> {game.title}</span> <span aria-hidden="true">→</span></Link>
         ) : (
           <Badge variant="default">Coming soon</Badge>
         )}

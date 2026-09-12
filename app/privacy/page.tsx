@@ -4,6 +4,9 @@ export const metadata: Metadata = {
   title: "Privacy Policy",
   description: "Privacy policy for Online Games Daily — how we handle data, cookies, and Google AdSense advertising.",
   alternates: { canonical: "/privacy" },
+  // Boilerplate legal page: no search value, and on a 24-URL site it is not
+  // worth the crawl budget. `follow` stays on so its outbound links still count.
+  robots: { index: false, follow: true },
 };
 
 export default function PrivacyPage() {

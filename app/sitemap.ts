@@ -4,11 +4,10 @@ import { siteUrl } from "@/lib/site";
 
 export const dynamic = "force-static";
 
-const staticPages: Array<{ path: string }> = [
-  { path: "/about" },
-  { path: "/privacy" },
-  { path: "/licenses" },
-];
+// /privacy and /licenses are intentionally absent: both carry
+// `robots: { index: false }`, and a noindexed URL in the sitemap is a
+// contradictory signal that just burns crawl budget.
+const staticPages: Array<{ path: string }> = [{ path: "/about" }];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   // This is a static export (no server), so `lastModified` is frozen at build

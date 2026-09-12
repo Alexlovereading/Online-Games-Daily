@@ -7,12 +7,13 @@ const columnLabelClassName = "text-xs font-bold uppercase tracking-wide text-sub
 
 export function SiteFooter() {
   const categories = getCategories();
-  const liveGameCount = getLiveGames().length;
+  const games = getLiveGames();
+  const liveGameCount = games.length;
 
   return (
     <footer className="border-t border-border bg-background">
-      <div className="site-shell grid grid-cols-1 gap-10 py-12 sm:grid-cols-3 sm:gap-8">
-        <div className="sm:col-span-1">
+      <div className="site-shell grid grid-cols-1 gap-10 py-12 sm:grid-cols-2 sm:gap-8 lg:grid-cols-5">
+        <div className="sm:col-span-2 lg:col-span-1">
           <Link
             className="flex items-center gap-2 font-display text-lg font-bold text-foreground"
             href="/"
@@ -30,6 +31,21 @@ export function SiteFooter() {
             {liveGameCount} free daily puzzle games — independent, calm, and built for the daily
             ritual. New days begin at 00:00 UTC.
           </p>
+        </div>
+
+        {/* Every game reachable from every page: game pages otherwise only link
+            out through their own Related block, and the header's game links
+            live in a hover dropdown. */}
+        <div className="sm:col-span-2">
+          <p className={columnLabelClassName}>All daily games</p>
+          <nav aria-label="Footer game links" className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
+            {games.map((game) => (
+              <Link key={game.slug} href={game.path} className={footerLinkClassName}>
+                {game.icon && <span className="mr-1.5" aria-hidden="true">{game.icon}</span>}
+                {game.title}
+              </Link>
+            ))}
+          </nav>
         </div>
 
         <div>

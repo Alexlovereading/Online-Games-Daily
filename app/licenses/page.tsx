@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   description:
     "Third-party attribution for the open-source projects several Online Games Daily game engines are adapted from, including upstream repositories, pinned commit SHAs, and full MIT license text.",
   alternates: { canonical: "/licenses" },
+  // Attribution page — required by the upstream MIT licenses and linked from
+  // the footer, but nothing anyone searches for. Same reasoning as /privacy.
+  robots: { index: false, follow: true },
 };
 
 type NoticeSection = {
