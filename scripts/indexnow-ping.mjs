@@ -18,11 +18,12 @@ const INDEXNOW_KEY = "477f8c947c074b58b6442b4b5fd860a0";
 
 const gamesData = JSON.parse(readFileSync(join(ROOT, "config", "games.json"), "utf-8"));
 
+// /privacy and /licenses are deliberately absent — both serve
+// `robots: noindex` and are excluded from the sitemap, so asking a search
+// engine to recrawl them is a contradictory signal.
 const urlList = [
   SITE_URL,
   `${SITE_URL}/about`,
-  `${SITE_URL}/privacy`,
-  `${SITE_URL}/licenses`,
   ...gamesData
     .filter((g) => g.status === "live")
     .map((g) => `${SITE_URL}${g.path}`),
