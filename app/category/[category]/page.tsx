@@ -22,7 +22,7 @@ const CATEGORY_META_DESCRIPTIONS: Record<GameCategory, string> = {
   number:
     "Free daily number puzzles: 2048, Cupcake 2048, a 3-difficulty Sudoku, and Minesweeper. One new seeded board per game every day at midnight UTC.",
   word: "Free daily word games: a Wordle-style guesser, Connections-style Word Groups, Waffle, Word Search, and Spelling Bee. New puzzles every midnight UTC.",
-  trivia: "Free daily capital-cities quiz — 8 questions drawn from 60 countries worldwide, the same quiz for everyone each day, reset at midnight UTC.",
+  trivia: "Two free daily quizzes — identify eight world flags, or name eight capital cities. Both draw from the same 60-country pool and reset at midnight UTC.",
   memory:
     "Free daily brain games: a 5-round reaction-time test and a 16-card memory match, reshuffled fresh every day at midnight UTC.",
   card: "Free daily Snake and Connect Four (vs. a seeded AI opponent) — the same daily challenge for every player, reset at midnight UTC.",
@@ -33,7 +33,7 @@ const CATEGORY_INTROS: Record<GameCategory, string> = {
     "Four daily number puzzles: classic 2048's slide-and-merge mechanic (plus its Cupcake-themed spin-off) — where every player's board starts from the same two seeded tiles, then diverges move by move — alongside a proper 9x9 Sudoku with three real difficulty tiers and a from-scratch Minesweeper board, both fully identical for every player all the way through. Every puzzle refreshes at midnight UTC.",
   word: "Five word puzzles built around formats you already know how to play: a Wordle-style five-letter guesser, a Connections-style word-grouping game, a tile-swap puzzle (Waffle), a themed word search, and a pangram-hunting Spelling Bee. Same seeded-by-date approach as the rest of the site — one puzzle, shared by everyone, resetting at midnight UTC.",
   trivia:
-    "One daily trivia game so far: an eight-question capital-cities quiz drawn from a 60-country pool spanning every region, with the same eight countries and answer choices for every player each day.",
+    "Two eight-question daily quizzes, both drawn from the same 60-country pool spanning every region: one shows you a national flag and asks which country it belongs to, the other names a country and asks for its capital. Same eight countries and same four answer choices for every player on a given day.",
   memory:
     "Two quick daily brain-speed checks: a five-round reaction-time test scored in milliseconds, and a 16-card memory-matching board reshuffled fresh each day. Both are built to finish in a couple of minutes, seeded the same way for every player on a given day.",
   card: "Two arcade-style daily challenges: classic Snake with a shared daily food sequence, and Connect Four against a seeded AI opponent that plays the same strategy for everyone on a given day.",

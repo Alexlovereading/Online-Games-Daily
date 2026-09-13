@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this is
 
-Online Games Daily — a free, independent daily puzzle site (14 games across Word,
+Online Games Daily — a free, independent daily puzzle site (15 games across Word,
 Math, Trivia, Memory, and Card categories). One fresh puzzle per game every day at
 UTC midnight, no accounts. The site itself is statically exported with Next.js —
 no server-side session, no per-request backend for any game logic. The one
@@ -177,7 +177,7 @@ itself is completely unaffected by the Worker's existence.
   `LEADERBOARD_SUBMITTED_EVENT` window event so a mounted `<Leaderboard>` for the
   same game can refetch instead of showing a stale list.
 - **`components/Leaderboard.tsx`** is rendered generically by `GameLayout.tsx` (13
-  of 14 games) and by `GameSwitcher.tsx` (the homepage/category-page switcher),
+  of 15 games) and by `GameSwitcher.tsx` (the homepage/category-page switcher),
   gated on `getLeaderboardConfig(slug)` returning non-null. Sudoku is the
   exception: it renders its own `<Leaderboard>` internally (keyed to whichever
   difficulty is currently selected), since neither of those generic callers knows

@@ -17,9 +17,9 @@ describe("game configuration", () => {
     expect(getFeaturedGame().slug).toBe("cupcake-2048");
   });
 
-  it("all fourteen engines are live", () => {
+  it("all fifteen engines are live", () => {
     const live = getLiveGames();
-    expect(live).toHaveLength(14);
+    expect(live).toHaveLength(15);
     expect(live.every((game) => game.status === "live")).toBe(true);
     expect(getGameBySlug("daily-sudoku")?.status).toBe("live");
   });
@@ -56,7 +56,7 @@ describe("game configuration", () => {
       "2048",
       "minesweeper",
     ]);
-    expect(getGamesByCategory("trivia").map((g) => g.slug)).toEqual(["capital-quiz"]);
+    expect(getGamesByCategory("trivia").map((g) => g.slug)).toEqual(["flag-quiz", "capital-quiz"]);
     expect(getGamesByCategory("memory").map((g) => g.slug)).toEqual([
       "reaction-test",
       "memory-game",

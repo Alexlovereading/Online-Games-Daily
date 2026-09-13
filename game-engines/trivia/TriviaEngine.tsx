@@ -3,12 +3,15 @@
 /**
  * Generic multiple-choice "daily trivia" engine.
  *
- * Extracted from game-engines/flag/FlagQuizGame.tsx (the project's original
- * multiple-choice daily-game interaction shell) and parameterized so any
- * dataset can be dropped in without re-deriving the state machine, the
- * feedback-delay/debounce timer logic, or the localStorage/stats wiring.
+ * Generalized out of the project's original single-purpose quiz component (the
+ * `fq-` CSS prefix its markup still uses is the leftover trace of that) and
+ * parameterized so any dataset can be dropped in without re-deriving the state
+ * machine, the feedback-delay/debounce timer logic, or the localStorage/stats
+ * wiring. It now backs two games — capital-quiz (text-only prompts) and
+ * flag-quiz (image prompts, via the optional `getPromptMedia` prop) — so treat
+ * every change here as affecting both.
  *
- * The interaction pattern (unchanged from the flag quiz):
+ * The interaction pattern:
  *  - buildQuestions(dateKey): getDailySeed(dateKey, slug) -> makeSeededRng ->
  *    shuffleWithRng(dataset, rng) picks the first `questionsPerGame` items;
  *    each question's correct answer + caller-supplied distractors are
@@ -46,6 +49,12 @@ export type TriviaEngineProps<T> = {
   winThreshold?: number;
   feedbackDelayMs?: number;
   getPrompt: (item: T) => string;
+  /**
+   * Optional image prompt rendered above the text prompt (e.g. flag-quiz's
+   * flag SVG). Omit it — or return null for a given item — and the engine
+   * renders exactly as it always has, text prompt only.
+   */
+  getPromptMedia?: (item: T) => { src: string; alt: string } | null;
   getCorrectAnswer: (item: T) => Choice;
   getDistractors: (item: T, pool: T[], rng: () => number) => Choice[];
 };
@@ -140,6 +149,7 @@ export function TriviaEngine<T>(props: TriviaEngineProps<T>) {
     winThreshold = DEFAULT_WIN_THRESHOLD,
     feedbackDelayMs = DEFAULT_FEEDBACK_DELAY_MS,
     getPrompt,
+    getPromptMedia,
     getCorrectAnswer,
     getDistractors,
   } = props;
@@ -328,6 +338,7 @@ export function TriviaEngine<T>(props: TriviaEngineProps<T>) {
   if (!question) return null;
 
   const fillPercent = (currentIdx / questionsPerGame) * 100;
+  const promptMedia = getPromptMedia?.(question.item) ?? null;
 
   return (
     <section className="fq-game" aria-label={title} data-ready={ready}>
@@ -353,6 +364,24 @@ export function TriviaEngine<T>(props: TriviaEngineProps<T>) {
           <div className="fq-progress-fill" style={{ transform: `scaleX(${fillPercent / 100})` }} />
         </div>
       </div>
+
+      {promptMedia && (
+        <div className="fq-prompt-media">
+          {/* Native <img>: next.config.ts sets images.unoptimized, so
+              next/image would add a client runtime for zero benefit here.
+              width/height are the intrinsic 4:3 ratio — paired with the
+              aspect-ratio in .fq-prompt-media img, the box is reserved before
+              the SVG loads, so the choice grid below never shifts (CLS 0). */}
+          <img
+            src={promptMedia.src}
+            alt={promptMedia.alt}
+            width={220}
+            height={165}
+            loading="eager"
+            decoding="async"
+          />
+        </div>
+      )}
 
       <p className="fq-question-label">{getPrompt(question.item)}</p>
 

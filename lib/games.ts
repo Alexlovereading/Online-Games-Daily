@@ -13,6 +13,10 @@ export const CATEGORY_LABELS: Record<GameCategory, string> = {
 export type GameConfig = {
   slug: string;
   title: string;
+  /** Optional longer <title>/og:title. The H1 and every on-site label still
+   *  use `title` — this only swaps the SERP-facing string, so a game can
+   *  carry keyword variants its display name shouldn't. */
+  seoTitle?: string;
   description: string;
   icon?: string;
   color?: string;

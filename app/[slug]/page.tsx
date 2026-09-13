@@ -22,13 +22,15 @@ export async function generateMetadata({
 
   if (!game) return {};
 
+  const metaTitle = game.seoTitle ?? game.title;
+
   return {
-    title: game.title,
+    title: metaTitle,
     description: game.description,
     keywords: game.keywords,
     alternates: { canonical: game.path },
     openGraph: {
-      title: game.title,
+      title: metaTitle,
       description: game.description,
       url: game.path,
       images: [{ url: ogImagePath(game.slug), width: 1200, height: 630, alt: game.title }],

@@ -22,7 +22,7 @@
     "related": [
       "2048",
       "daily-sudoku",
-      "memory-game",
+      "flag-quiz",
       "reaction-test"
     ],
     "faq": [
@@ -687,7 +687,7 @@
       "cupcake-2048",
       "daily-sudoku",
       "minesweeper",
-      "memory-game"
+      "snake-game"
     ],
     "faq": [
       {
@@ -749,6 +749,109 @@
     ]
   },
   {
+    "slug": "flag-quiz",
+    "title": "Daily Flag Quiz",
+    "seoTitle": "Daily Country Flag Quiz — Guess the Flag",
+    "description": "A free daily flag quiz — identify eight world flags, four country choices each. The same eight for every player, from a 60-country pool, reset at midnight UTC.",
+    "icon": "🚩",
+    "color": "#c0399b",
+    "path": "/flag-quiz",
+    "engine": "flag-quiz",
+    "category": "trivia",
+    "daily": true,
+    "priority": 9,
+    "status": "live",
+    "keywords": [
+      "flag quiz",
+      "world flag quiz",
+      "country flag quiz",
+      "countries flag quiz",
+      "national flag quiz",
+      "guess the flag quiz",
+      "flag quiz game",
+      "daily flag quiz",
+      "europe flag quiz",
+      "flags of the world quiz"
+    ],
+    "related": [
+      "capital-quiz",
+      "reaction-test",
+      "memory-game",
+      "daily-word-game"
+    ],
+    "faq": [
+      {
+        "q": "How many flags do I get each day?",
+        "a": "Eight, one at a time. Each one gives you four country names to pick from: the right answer plus three other countries pulled from the same pool."
+      },
+      {
+        "q": "Does everyone get the same flags?",
+        "a": "Yes. The day's line-up comes from hashing the UTC date together with the game's slug (FNV-1a, fed into a Mulberry32 generator), so every player on a given UTC date sees the same eight flags in the same order with the same four choices. It flips at 00:00 UTC, not your local midnight."
+      },
+      {
+        "q": "How many do I need to get right to win?",
+        "a": "Six of eight. Below that the day is recorded as a loss and your streak resets to zero — and the streak also breaks if you skip a day entirely, since it only extends when yesterday was a win. Your raw score out of 8 is kept either way."
+      },
+      {
+        "q": "How many countries are in this country flag quiz?",
+        "a": "60, and it's the same roster the Daily Capital Quiz draws from: 20 European, 18 Asian, 10 from the Americas, 9 African, and 3 from Oceania. Eight of the 60 get drawn per day, so it takes a while before you start seeing repeats."
+      },
+      {
+        "q": "Is this a world flag quiz, or can I practice just European flags?",
+        "a": "It's a world flag quiz — every inhabited continent is in the pool — and there's no Europe flag quiz mode or region filter. Europe is still the biggest slice — 20 of the 60: the UK, France, Germany, Italy, Spain, Portugal, the Netherlands, Belgium, Sweden, Norway, Denmark, Finland, Switzerland, Austria, Poland, Greece, the Czech Republic, Russia, Ukraine and Romania. On an average day a third of your eight flags are European, and the Nordic crosses and the red-white-blue tricolors in that list are where most people lose points."
+      },
+      {
+        "q": "Is there a time limit?",
+        "a": "None on deciding — you can stare at a flag as long as you like. Once you tap a choice, the right answer lights up green for 1.5 seconds and then it auto-advances; hitting \"Next →\" fires that advance immediately if you don't want to wait."
+      },
+      {
+        "q": "Does my result save if I close the tab?",
+        "a": "A finished round does — the score and the per-question review pips are stored locally under a key for that date, so reopening the page shows your result instead of letting you replay for a better one. An unfinished round doesn't restore: reload halfway through and you get the same eight flags again, starting from the first one, with the score back at zero."
+      },
+      {
+        "q": "Can I play more than one round a day?",
+        "a": "Yes. The results screen has a \"Play Again\" button that deals a fresh random eight from the 60-country pool, as many times as you want. Those rounds live in memory only — they never overwrite today's saved result, your streak, or your win count."
+      },
+      {
+        "q": "Why are the flags so sharp when I zoom in?",
+        "a": "They're SVGs, not PNGs — the 4x3 set from the MIT-licensed flag-icons package (version 7.5.0, credited in the site's licenses page), copied at build time into /flags/ as plain static files. Only the 60 ISO codes this quiz uses get copied out of flag-icons' ~270, so the export isn't carrying 200-odd flags nobody sees."
+      },
+      {
+        "q": "Are the flags shown at their real-world proportions?",
+        "a": "No — every flag renders in the same 4:3 box, 220px wide at most. Switzerland's flag is genuinely square in real life and it still shows up in that same 4:3 frame here, so proportions are never a clue about which country you're looking at. You have to go on the design itself."
+      },
+      {
+        "q": "Does the flag image give the answer away in the page source?",
+        "a": "The alt text doesn't — it's the generic \"National flag to identify\" rather than the country name, so a screen reader and anyone skimming the markup don't get spoiled. The image's file path does, though: each flag is served from /flags/ named by its ISO country code, so br.svg is Brazil and anyone who opens DevTools can read it off the network tab. That's a deliberate trade-off rather than an oversight — obfuscating the filenames would buy nothing against someone determined to cheat at a daily quiz, and it would make the flags uncacheable and the build harder to verify. The flip side of the generic alt text is real, though: this is an inherently visual game, and a screen reader gets the four country names and the progress count but no description of the flag itself, because any description accurate enough to be useful would also be the answer."
+      },
+      {
+        "q": "Can a country I already identified show up as a wrong answer later the same day?",
+        "a": "Yes, and it happens most days. The three wrong choices for a question are drawn from the full 60-country pool minus only that question's own country — not from what's left after the day's other seven are picked. So the country you correctly named on flag 2 can reappear as a tempting distractor on flag 6."
+      },
+      {
+        "q": "What happens if UTC midnight hits while I'm mid-quiz?",
+        "a": "The page reloads itself about 100ms after midnight and you're on the new day's eight flags. The unfinished round from the previous day isn't recorded as a loss — nothing is written to your stats until you actually finish all eight."
+      },
+      {
+        "q": "How is this different from the big name-every-flag-in-the-world quizzes?",
+        "a": "Those are typing marathons against a clock over roughly 200 flags. This flag quiz game is a national flag quiz in a different shape: eight multiple-choice flags a day out of a 60-country pool, no typing and no timer, and the same eight for everyone — so it's a two-minute daily habit you can compare with other people rather than a single long session you grind for a high score."
+      }
+    ],
+    "tips": [
+      "Four flags in the pool carry the Union Jack in the canton: the UK itself, Australia, New Zealand and Fiji. Count the stars to split them — Australia has six white stars (one large seven-pointed one under the canton), New Zealand has four red stars with white outlines and nothing under the canton, and Fiji's field is pale sky blue with a shield instead of stars.",
+      "Canada and Peru are the same red-white-red vertical triband, and Peru's is plain in this set — no coat of arms. So if the white band is empty, it's Peru; if there's a maple leaf, it's Canada. Poland and Indonesia are the same trick in two horizontal bands: white over red is Poland, red over white is Indonesia.",
+      "The four Nordic crosses are all off-center toward the hoist, and each has its own color pair: Denmark red with a white cross, Sweden blue with yellow, Finland white with blue, Norway red with a blue cross inside a white one. Switzerland also has a cross but it's centered and square-armed, so it never belongs in this group.",
+      "Three green-yellow-red flags in the pool look alike at a glance. Ghana's runs red-yellow-green with a black star in the middle; Ethiopia's runs green-yellow-red with a blue disc and a yellow star; Senegal's bands are vertical, green-yellow-red, with a green star. Band order and orientation do the work here.",
+      "For a plain red field with one symbol on it, check what the symbol is: five yellow stars is China, one big yellow star is Vietnam, a white crescent with a star is Turkey, and a green interlaced pentagram is Morocco.",
+      "When two flags share a color stack, the emblem is the tiebreaker. Italy and Mexico are both green-white-red verticals — Mexico has the eagle-and-snake in the center. Colombia and Venezuela are both yellow-blue-red horizontals — Venezuela has an arc of white stars across the blue, Colombia's bands are bare, and Colombia's yellow band is double-height."
+    ],
+    "howToPlay": [
+      "Look at the flag shown for the current question.",
+      "Guess the flag by picking the country it belongs to from the four choices.",
+      "Answer all eight to see your score and which ones you missed."
+    ]
+  },
+  {
     "slug": "capital-quiz",
     "title": "Daily Capital Quiz",
     "description": "Match each country to its capital city in eight quick multiple-choice rounds — a fresh mix of countries and capitals from around the world every day.",
@@ -758,7 +861,7 @@
     "engine": "capital-quiz",
     "category": "trivia",
     "daily": true,
-    "priority": 9,
+    "priority": 10,
     "status": "live",
     "keywords": [
       "capital cities quiz",
@@ -774,7 +877,7 @@
     "related": [
       "reaction-test",
       "memory-game",
-      "daily-word-groups",
+      "flag-quiz",
       "daily-word-game"
     ],
     "faq": [
@@ -850,7 +953,7 @@
     "engine": "word",
     "category": "word",
     "daily": true,
-    "priority": 10,
+    "priority": 11,
     "status": "live",
     "keywords": [
       "daily word game",
@@ -946,7 +1049,7 @@
     "engine": "minesweeper",
     "category": "number",
     "daily": true,
-    "priority": 11,
+    "priority": 12,
     "status": "live",
     "keywords": [
       "minesweeper online",
@@ -1041,7 +1144,7 @@
     "engine": "memory",
     "category": "memory",
     "daily": true,
-    "priority": 12,
+    "priority": 13,
     "status": "live",
     "keywords": [
       "memory game online",
@@ -1053,7 +1156,7 @@
     "related": [
       "reaction-test",
       "capital-quiz",
-      "minesweeper",
+      "flag-quiz",
       "cupcake-2048"
     ],
     "faq": [
@@ -1129,7 +1232,7 @@
     "engine": "connect-four",
     "category": "card",
     "daily": true,
-    "priority": 13,
+    "priority": 14,
     "status": "live",
     "keywords": [
       "connect four game",
@@ -1214,7 +1317,7 @@
     "engine": "word-groups",
     "category": "word",
     "daily": true,
-    "priority": 14,
+    "priority": 15,
     "status": "live",
     "keywords": [
       "word association game",

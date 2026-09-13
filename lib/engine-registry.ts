@@ -14,6 +14,7 @@ const ENGINE_REGISTRY: Record<string, ComponentType<EngineProps>> = {
   memory: dynamic(() => import("@/game-engines/memory/MemoryGame").then((m) => m.MemoryGame)),
   "reaction-test": dynamic(() => import("@/game-engines/reaction-test/ReactionTestGame").then((m) => m.ReactionTestGame)),
   "capital-quiz": dynamic(() => import("@/game-engines/trivia/CapitalQuizGame").then((m) => m.CapitalQuizGame)),
+  "flag-quiz": dynamic(() => import("@/game-engines/trivia/FlagQuizGame").then((m) => m.FlagQuizGame)),
   minesweeper: dynamic(() => import("@/game-engines/minesweeper/MinesweeperGame").then((m) => m.MinesweeperGame)),
   "word-search": dynamic(() => import("@/game-engines/word-search/WordSearchGame").then((m) => m.WordSearchGame)),
   "spelling-bee": dynamic(() => import("@/game-engines/spelling-bee/SpellingBeeGame").then((m) => m.SpellingBeeGame)),

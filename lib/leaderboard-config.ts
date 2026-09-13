@@ -136,6 +136,17 @@ export const LEADERBOARD_GAMES: Record<string, LeaderboardGameConfig> = {
     min: 0,
     max: 8,
   },
+  "flag-quiz": {
+    slug: "flag-quiz",
+    title: "Daily Flag Quiz",
+    metricLabel: "Correct answers",
+    unit: "count",
+    direction: "higher_is_better",
+    min: 0,
+    // TriviaEngine's DEFAULT_QUESTIONS_PER_GAME is 8 and this game doesn't
+    // override it, so 8 correct answers is a hard ceiling, not a guess.
+    max: 8,
+  },
   "daily-word-game": {
     slug: "daily-word-game",
     title: "The Daily Word",

@@ -267,3 +267,47 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+------------------------------------------------------------------------
+
+Daily Flag Quiz country flag SVGs are adapted from:
+
+Project: flag-icons
+Repository: https://github.com/lipis/flag-icons
+Pinned version: 7.5.0 (npm, devDependency)
+License: MIT
+Copyright (c) 2013 Panayiotis Lipiridis
+
+Upstream files adapted:
+- flags/4x3/*.svg (the 60 ISO 3166-1 alpha-2 codes listed in data/trivia/capitals.json)
+
+Source-to-current mapping:
+- node_modules/flag-icons/flags/4x3/<code>.svg -> public/flags/<code>.svg
+  (copied at build time by scripts/copy-flags.js, run from predev/prebuild)
+
+Modifications:
+- None to the artwork: each SVG is copied byte-for-byte, unminified and unrecoloured.
+- Only the 60 countries used by Daily Flag Quiz are copied; the remaining ~210 flags
+  and the package's CSS/Sass sprite layers are not shipped.
+- Served as plain static files under /flags/ instead of via the upstream CSS classes,
+  so the static export carries no flag-icons stylesheet or JavaScript.
+
+MIT License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

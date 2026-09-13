@@ -1,7 +1,7 @@
 # Online Games Daily
 
 A free, independent daily puzzle site — one fresh puzzle per game, every day at UTC
-midnight, no accounts. 14 games across five categories (Word, Math, Trivia, Memory,
+midnight, no accounts. 15 games across five categories (Word, Math, Trivia, Memory,
 Card). Statically exported with Next.js and deployed to Cloudflare Pages: no
 database, no server-side session, no backend.
 
