@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { getCategories, getGamesByCategory, CATEGORY_LABELS } from "@/lib/games";
 
@@ -18,8 +18,35 @@ export function SiteHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDrawerShown, setIsDrawerShown] = useState(false);
   const [openCategory, setOpenCategory] = useState<string | null>(null);
+  const closeTimerRef = useRef<number | null>(null);
 
   const closeMenu = () => setIsMenuOpen(false);
+
+  const cancelScheduledClose = () => {
+    if (closeTimerRef.current !== null) {
+      window.clearTimeout(closeTimerRef.current);
+      closeTimerRef.current = null;
+    }
+  };
+
+  const openDropdown = (cat: string) => {
+    cancelScheduledClose();
+    setOpenCategory(cat);
+  };
+
+  // Short grace period instead of closing on the first mouseleave: moving
+  // the pointer down to a game link often clips a corner of the trigger or
+  // the panel for a frame or two (and a diagonal path can leave the
+  // wrapper entirely), which otherwise yanked the menu away mid-click.
+  const scheduleDropdownClose = (cat: string) => {
+    cancelScheduledClose();
+    closeTimerRef.current = window.setTimeout(() => {
+      closeTimerRef.current = null;
+      setOpenCategory((current) => (current === cat ? null : current));
+    }, 180);
+  };
+
+  useEffect(() => cancelScheduledClose, []);
 
   useEffect(() => {
     if (!isMenuOpen) {
@@ -77,35 +104,50 @@ export function SiteHeader() {
               <div
                 key={cat}
                 className="relative"
-                onMouseEnter={() => setOpenCategory(cat)}
-                onMouseLeave={() => setOpenCategory((current) => (current === cat ? null : current))}
+                onMouseEnter={() => openDropdown(cat)}
+                onMouseLeave={() => scheduleDropdownClose(cat)}
+                onFocus={() => openDropdown(cat)}
+                onBlur={(event) => {
+                  if (!event.currentTarget.contains(event.relatedTarget as Node | null)) {
+                    scheduleDropdownClose(cat);
+                  }
+                }}
               >
                 <Link href={`/category/${cat}`} className={navLinkClassName}>
                   {CATEGORY_LABELS[cat]}
                 </Link>
 
                 {liveGames.length > 0 && (
+                  // The visual gap between the trigger and the panel is
+                  // padding on this wrapper, not a margin on the panel —
+                  // a margin left an 8px dead zone that fired mouseleave
+                  // (and closed the menu) on the way down to a game link.
                   <div
-                    className={`absolute top-full z-30 mt-2 flex w-52 flex-col gap-0.5 rounded-lg border border-border bg-card p-2 shadow-xl transition-[opacity,transform] duration-150 ${
-                      isLast ? "right-0" : "left-0"
-                    } ${
-                      isOpen
-                        ? "dropdown-in visible opacity-100"
-                        : "invisible -translate-y-1 opacity-0"
+                    className={`absolute top-full z-30 pt-2 ${isLast ? "right-0" : "left-0"} ${
+                      isOpen ? "visible" : "invisible"
                     }`}
                   >
-                    {liveGames.map((game) => (
-                      <Link
-                        href={game.path}
-                        key={game.slug}
-                        className={dropdownGameLinkClassName}
-                        tabIndex={isOpen ? undefined : -1}
-                        onClick={() => setOpenCategory(null)}
-                      >
-                        <span aria-hidden="true">{game.icon}</span>
-                        <span>{game.title}</span>
-                      </Link>
-                    ))}
+                    <div
+                      className={`flex w-52 flex-col gap-0.5 rounded-lg border border-border bg-card p-2 shadow-xl transition-[opacity,transform] duration-150 ${
+                        isOpen ? "dropdown-in opacity-100" : "-translate-y-1 opacity-0"
+                      }`}
+                    >
+                      {liveGames.map((game) => (
+                        <Link
+                          href={game.path}
+                          key={game.slug}
+                          className={dropdownGameLinkClassName}
+                          tabIndex={isOpen ? undefined : -1}
+                          onClick={() => {
+                            cancelScheduledClose();
+                            setOpenCategory(null);
+                          }}
+                        >
+                          <span aria-hidden="true">{game.icon}</span>
+                          <span>{game.title}</span>
+                        </Link>
+                      ))}
+                    </div>
                   </div>
                 )}
               </div>
